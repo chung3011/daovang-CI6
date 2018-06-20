@@ -1,82 +1,89 @@
+import base.GameObjectManager;
+import game.Particle;
+import game.background.Background;
+import game.effect.EffectObjectSpawner;
+import game.enemy.EnemySpawner;
+import game.enemy.SpecialEnemySpawner;
+import game.player.Player;
+import game.star.StarSpawner;
+import input.KeyboardInput;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.util.Random;
+
 
 public class GameCanvas extends JPanel {
 
-    private final int WIDTH = 1650;
-    public final int HEIGHT = 1080;
 
-    public double angle;
-    public int length;
-
-    Vector2D anchorPosition;
-    Vector2D ballPosition;
-
-    BufferedImage ballImage;
-    BufferedImage anchorImage;
+    BufferedImage backBuffered;
     Graphics graphics;
-    BufferedImage backBuffer;
 
-    public GameCanvas() {
-        this.setSize(1650,1080);
-        angle = Math.PI / 2;
-        length = 100;
-        anchorPosition = new Vector2D(WIDTH/2,HEIGHT/8);
-        ballPosition = new Vector2D(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length) );
-        this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
-        this.graphics = backBuffer.getGraphics();
+    Player player;
+    Particle particle = new Particle();
 
-        try {
-            this.anchorImage = ImageIO.read(new File("resources/images/anchor.png"));
-            this.ballImage = ImageIO.read(new File("resources/images/circle.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private Random random = new Random();
 
+
+
+    public GameCanvas()  {
+        this.setSize(1024, 600);
+        this.setupCharacter();
+        this.setupBackbuffered();
         this.setVisible(true);
 
     }
+    private void setupBackbuffered(){
+        this.backBuffered = new BufferedImage(1024,600, BufferedImage.TYPE_4BYTE_ABGR);
+        this.graphics = this.backBuffered.getGraphics();
+    }
+
+    private void setupCharacter(){
+        GameObjectManager.instance.add(new Background());
+
+        this.setupPlayer();
+        GameObjectManager.instance.add(new StarSpawner());
+        GameObjectManager.instance.add(new EnemySpawner());
+        GameObjectManager.instance.add(new SpecialEnemySpawner());
+//
+        GameObjectManager.instance.add(new EffectObjectSpawner());
+    }
+
+
+
+    private  void setupPlayer(){
+        this.player = GameObjectManager.instance.recycle(Player.class);
+        this.player.position.set(500,300);
+        this.player.playerMove.velocity.set(4,0);
+
+    }
+
+
 
     @Override
     protected void paintComponent(Graphics g) {
-        g.drawImage(this.backBuffer,0,0,null);
-    }
-
-    public void runAll() {
-        double angleAccel, angleVelocity = 0, dt = 0.1;
-        angleAccel = -9.81 / this.length * Math.sin(this.angle );
-        angleVelocity += angleAccel * dt;
-        this.angle += angleVelocity * dt;
-        ballPosition.set(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length));
+        g.drawImage(this.backBuffered,0,0,null);
 
     }
 
+    public void renderAll(){
 
-    private void renderBackground() {
-        this.graphics.setColor(Color.WHITE);
-        this.graphics.fillRect(0, 0, WIDTH, HEIGHT);
-    }
+        GameObjectManager.instance.renderAll(this.graphics);
 
-    public void renderAll() {
-        this.renderBackground();
-        this.graphics.setColor(Color.BLACK);
-//        graphics.drawLine( (int) anchorPosition.x, (int) anchorPosition.y, (int) ballPosition.x, (int) ballPosition.y);
-        graphics.fillOval((int) anchorPosition.x - 3, (int)anchorPosition.y - 4, 7, 7);
-        graphics.fillOval((int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14);
         this.repaint();
     }
 
-    private BufferedImage loadImage(String path) {
-        try {
-            return ImageIO.read(new File(path));
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
+
+    public void runAll(){
+        GameObjectManager.instance.runAll();
+        this.particle.run(this.player);
+        KeyboardInput.instance.reset();
+
     }
+
+
+
+
+
 }

@@ -69,7 +69,7 @@ public class GameCanvas extends JPanel {
         }
 
         if (isCatching) {
-            if (ropeDirection.x > WIDTH - 200|| ropeDirection.y > HEIGHT - 200 || ropeDirection.x < 200) {
+            if (ropeDirection.x > WIDTH - 200|| ropeDirection.y > HEIGHT - 200 || ropeDirection.x < 0) {
                 isDropping = false;
             }
 
@@ -78,7 +78,8 @@ public class GameCanvas extends JPanel {
             }
 
             if (!isDropping) {
-                if (ropeDirection.y <= anchorPosition.y + 100) {
+                if( (anchorPosition.y -10 <= ropeDirection.y || ropeDirection.y <= anchorPosition.y + 10) && (
+                        anchorPosition.x-10 <= ropeDirection.x && ropeDirection.x <= anchorPosition.x + 10) ) {
                     isCatching = false;
 
                 }

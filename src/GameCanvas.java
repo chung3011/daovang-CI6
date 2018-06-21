@@ -1,89 +1,134 @@
-import base.GameObjectManager;
-import game.Particle;
-import game.background.Background;
-import game.effect.EffectObjectSpawner;
-import game.enemy.EnemySpawner;
-import game.enemy.SpecialEnemySpawner;
-import game.player.Player;
-import game.star.StarSpawner;
-import input.KeyboardInput;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.Random;
-
+import java.io.File;
+import java.io.IOException;
 
 public class GameCanvas extends JPanel {
 
+    private final int WIDTH = 1650;
+    public final int HEIGHT = 1080;
 
-    BufferedImage backBuffered;
+    public double angle;
+    public int length;
+
+    public double angleAccel = 0;
+    public double angleVelocity = 0;
+    public double dt = 0.1 ;
+
+    public boolean isDropping = false;
+    public boolean isCatching = false;
+    Vector2D anchorPosition;
+    Vector2D ballPosition;
+    Vector2D ropeDirection;
+    Vector2D movingDirection;
+
+    BufferedImage ballImage;
+    BufferedImage anchorImage;
     Graphics graphics;
+    BufferedImage backBuffer;
 
-    Player player;
-    Particle particle = new Particle();
+    public GameCanvas() {
+        this.setSize(WIDTH,HEIGHT);
+        angle = Math.PI / 2;
+        length = 100;
+        anchorPosition = new Vector2D(WIDTH/3,HEIGHT/8);
+        ballPosition = new Vector2D(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length) );
+        this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
+        this.graphics = backBuffer.getGraphics();
 
-    private Random random = new Random();
+        try {
+            this.anchorImage = ImageIO.read(new File("resources/images/anchor.png"));
+            this.ballImage = ImageIO.read(new File("resources/images/circle.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        this.ropeDirection = new Vector2D();
 
-
-    public GameCanvas()  {
-        this.setSize(1024, 600);
-        this.setupCharacter();
-        this.setupBackbuffered();
         this.setVisible(true);
+        this.movingDirection = new Vector2D();
 
     }
-    private void setupBackbuffered(){
-        this.backBuffered = new BufferedImage(1024,600, BufferedImage.TYPE_4BYTE_ABGR);
-        this.graphics = this.backBuffered.getGraphics();
-    }
-
-    private void setupCharacter(){
-        GameObjectManager.instance.add(new Background());
-
-        this.setupPlayer();
-        GameObjectManager.instance.add(new StarSpawner());
-        GameObjectManager.instance.add(new EnemySpawner());
-        GameObjectManager.instance.add(new SpecialEnemySpawner());
-//
-        GameObjectManager.instance.add(new EffectObjectSpawner());
-    }
-
-
-
-    private  void setupPlayer(){
-        this.player = GameObjectManager.instance.recycle(Player.class);
-        this.player.position.set(500,300);
-        this.player.playerMove.velocity.set(4,0);
-
-    }
-
-
 
     @Override
     protected void paintComponent(Graphics g) {
-        g.drawImage(this.backBuffered,0,0,null);
+        g.drawImage(this.backBuffer,0,0,null);
 
     }
 
-    public void renderAll(){
+    public void runAll() {
 
-        GameObjectManager.instance.renderAll(this.graphics);
+        if (!isCatching) {
+            angleAccel = -9.81 / this.length * Math.sin(this.angle );
+            angleVelocity += angleAccel * dt;
+            this.angle += angleVelocity * dt;
+            ballPosition.set(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length));
+        }
 
+        if (isCatching) {
+            if (ropeDirection.x > WIDTH - 200|| ropeDirection.y > HEIGHT - 200 || ropeDirection.x < 0) {
+                isDropping = false;
+            }
+
+            if (isDropping) {
+                ropeDirection.addUp(movingDirection);
+            }
+
+            if (!isDropping) {
+                if( (anchorPosition.y -10 <= ropeDirection.y || ropeDirection.y <= anchorPosition.y + 10) && (
+                        anchorPosition.x-10 <= ropeDirection.x && ropeDirection.x <= anchorPosition.x + 10) ) {
+                    isCatching = false;
+
+                }
+                else ropeDirection.subtractBy(movingDirection);
+
+
+
+            }
+
+
+        }
+
+    }
+
+
+    private void renderBackground() {
+        this.graphics.setColor(Color.WHITE);
+        this.graphics.fillRect(0, 0, WIDTH, HEIGHT);
+    }
+
+    public void renderAll() {
+        this.renderBackground();
+        this.graphics.setColor(Color.BLACK);
+        graphics.fillOval((int) anchorPosition.x - 3, (int)anchorPosition.y - 4, 7, 7);
+
+        if (!isCatching) {
+            graphics.drawLine( (int) anchorPosition.x, (int) anchorPosition.y, (int) ballPosition.x, (int) ballPosition.y);
+
+            this.graphics.drawImage(this.anchorImage, (int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14, null);
+
+        }
+
+        else if (isCatching) {
+
+            graphics.drawLine((int) anchorPosition.x, (int) anchorPosition.y, (int) ropeDirection.x, (int) ropeDirection.y);
+        }
+
+//        graphics.fillOval((int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14);
         this.repaint();
     }
 
 
-    public void runAll(){
-        GameObjectManager.instance.runAll();
-        this.particle.run(this.player);
-        KeyboardInput.instance.reset();
 
+    private BufferedImage loadImage(String path) {
+        try {
+            return ImageIO.read(new File(path));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
-
-
-
-
-
 }

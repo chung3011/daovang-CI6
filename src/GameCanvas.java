@@ -11,45 +11,30 @@ public class GameCanvas extends JPanel {
     private final int WIDTH = 1650;
     public final int HEIGHT = 1080;
 
-    public double angle;
-    public int length;
+    public Anchor anchor;
+    public Player player;
 
-    public double angleAccel = 0;
-    public double angleVelocity = 0;
-    public double dt = 0.1 ;
-
-    public boolean isDropping = false;
-    public boolean isCatching = false;
-    Vector2D anchorPosition;
-    Vector2D ballPosition;
     Vector2D ropeDirection;
     Vector2D movingDirection;
 
-    BufferedImage ballImage;
-    BufferedImage anchorImage;
+
     Graphics graphics;
     BufferedImage backBuffer;
 
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
-        angle = Math.PI / 2;
-        length = 100;
-        anchorPosition = new Vector2D(WIDTH/3,HEIGHT/8);
-        ballPosition = new Vector2D(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length) );
+
         this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
         this.graphics = backBuffer.getGraphics();
 
-        try {
-            this.anchorImage = ImageIO.read(new File("resources/images/anchor.png"));
-            this.ballImage = ImageIO.read(new File("resources/images/circle.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        this.anchor = new Anchor();
+        this.player = new Player();
 
         this.ropeDirection = new Vector2D();
+        this.movingDirection = new Vector2D();
 
         this.setVisible(true);
-        this.movingDirection = new Vector2D();
+
 
     }
 
@@ -60,62 +45,29 @@ public class GameCanvas extends JPanel {
     }
 
     public void runAll() {
-
-        if (!isCatching) {
-            angleAccel = -9.81 / this.length * Math.sin(this.angle );
-            angleVelocity += angleAccel * dt;
-            this.angle += angleVelocity * dt;
-            ballPosition.set(anchorPosition.x + (int) (Math.sin(angle) * length), anchorPosition.y + (int) (Math.cos(angle) * length));
-        }
-
-        if (isCatching) {
-            if (ropeDirection.x > WIDTH - 200|| ropeDirection.y > HEIGHT - 200 || ropeDirection.x < 0) {
-                isDropping = false;
-            }
-
-            if (isDropping) {
-                ropeDirection.addUp(movingDirection);
-            }
-
-            if (!isDropping) {
-                if( (anchorPosition.y -10 <= ropeDirection.y || ropeDirection.y <= anchorPosition.y + 10) && (
-                        anchorPosition.x-10 <= ropeDirection.x && ropeDirection.x <= anchorPosition.x + 10) ) {
-                    isCatching = false;
-
-                }
-                else ropeDirection.subtractBy(movingDirection);
-
-
-
-            }
-
-
-        }
-
+        anchor.run(player.getPosition(), ropeDirection, movingDirection);
     }
 
 
     private void renderBackground() {
-        this.graphics.setColor(Color.WHITE);
+        this.graphics.setColor(Color.BLACK);
         this.graphics.fillRect(0, 0, WIDTH, HEIGHT);
     }
 
     public void renderAll() {
         this.renderBackground();
-        this.graphics.setColor(Color.BLACK);
-        graphics.fillOval((int) anchorPosition.x - 3, (int)anchorPosition.y - 4, 7, 7);
+        this.graphics.setColor(Color.WHITE);
+        graphics.fillOval((int) player.getPosition().x - 3, (int)player.getPosition().y - 4, 7, 7);
 
-        if (!isCatching) {
-            graphics.drawLine( (int) anchorPosition.x, (int) anchorPosition.y, (int) ballPosition.x, (int) ballPosition.y);
-
-            this.graphics.drawImage(this.anchorImage, (int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14, null);
-
+        if (!anchor.isCatching) {
+            graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y, (int) anchor.position.x, (int) anchor.position.y);
         }
 
-        else if (isCatching) {
-
-            graphics.drawLine((int) anchorPosition.x, (int) anchorPosition.y, (int) ropeDirection.x, (int) ropeDirection.y);
+        else if (anchor.isCatching) {
+            graphics.drawLine((int) player.getPosition().x, (int) player.getPosition().y, (int) ropeDirection.x, (int) ropeDirection.y);
         }
+        this.anchor.render(graphics);
+
 
 //        graphics.fillOval((int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14);
         this.repaint();

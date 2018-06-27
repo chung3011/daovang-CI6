@@ -24,9 +24,9 @@ public class Anchor {
 
 
     public Anchor() {
-        this.renderer = new ImageRenderer("resources/images/anchor.png", WIDTH,HEIGHT, Color.WHITE);
+        this.renderer = new ImageRenderer("resources/images/anchor.png", WIDTH,HEIGHT);
         this.position = new Vector2D();
-        this.boxCollider = new BoxCollider( (int) this.position.x - 10, (int) this.position.y - 10);
+        this.boxCollider = new BoxCollider(WIDTH,HEIGHT);
         this.player = new Player();
 
         this.angle = Math.PI / 2;
@@ -62,6 +62,7 @@ public class Anchor {
             this.position.set(ropeDirection);
 
         }
+        boxCollider.position.set( (int) this.position.x - 10, (int) this.position.y - 10 );
     }
 
     public void render(Graphics graphics) {

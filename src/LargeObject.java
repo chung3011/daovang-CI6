@@ -8,21 +8,37 @@ public class LargeObject {
     BoxCollider boxCollider;
     ImageRenderer renderer;
     Random random;
+    boolean isCaught;
+    boolean isAlive;
+
 
 
     public LargeObject() {
         random = new Random();
-        this.position = new Vector2D(random.nextInt(1650), random.nextInt(1080));
-        this.renderer = new ImageRenderer("resources/images/circle.png", 40, 40, Color.CYAN);
-        this.boxCollider = new BoxCollider( (int) this.position.x - 20, (int) this.position.y -20);
+        this.position = new Vector2D(random.nextInt(1650), random.nextInt(700));
+        this.renderer = new ImageRenderer("resources/images/circle.png", 40, 40);
+        this.boxCollider = new BoxCollider( 40,40 );
+        this.boxCollider.position.set((int)this.position.x - 20, (int) this.position.y - 20);
+        this.isCaught = false;
+        this.isAlive = true;
     }
 
     public void render(Graphics graphics) {
-        this.renderer.render(graphics, this.position);
+        if (this.isAlive) {
+            this.renderer.render(graphics, this.position);
+        }
     }
 
-    public BoxCollider getBoxCollider() {
-        return  this.boxCollider;
+    public void run(Anchor anchor) {
+        if (isCaught) {
+            if (!anchor.isCatching) {
+                this.isAlive = false;
+            }
+            else this.position.set(anchor.position);
 
+
+        }
     }
+
+
 }

@@ -13,7 +13,7 @@ public class SmallObject {
     public SmallObject() {
         random = new Random();
         this.position = new Vector2D(random.nextInt(1650), random.nextInt(1080));
-        this.renderer = new ImageRenderer("resources/images/circle.png", 20, 20, Color.GREEN);
+        this.renderer = new ImageRenderer("resources/images/circle.png", 20, 20);
         this.boxCollider = new BoxCollider( (int) this.position.x - 10, (int) this.position.y - 10);
     }
 

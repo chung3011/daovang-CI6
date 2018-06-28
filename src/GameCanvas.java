@@ -11,6 +11,7 @@ public class GameCanvas extends JPanel {
 
     Anchor anchor;
     Player player;
+    LargeObject largeObject = new LargeObject();
 
     Graphics graphics;
     BufferedImage backBuffer;
@@ -22,9 +23,8 @@ public class GameCanvas extends JPanel {
         this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
         this.graphics = backBuffer.getGraphics();
 
-        this.anchor = new Anchor();
-        this.player = new Player();
-
+        GameObjectManager.instance.add(new Anchor());
+        GameObjectManager.instance.add(new Player());
         GameObjectManager.instance.add(new Background());
         GameObjectManager.instance.add(new SmallObject());
         GameObjectManager.instance.add(new LargeObject());
@@ -47,6 +47,13 @@ public class GameCanvas extends JPanel {
 
     public void runAll() {
         this.anchor.run(this.player);
+        this.largeObject.run(anchor);
+        largeObject.run(anchor);
+        if (anchor.boxCollider.checkBoxCollider(largeObject.boxCollider)) {
+            largeObject.isCaught = true;
+            anchor.isDropping = false;
+        }
+
         GameObjectManager.instance.runAll();
 
     }
@@ -54,6 +61,8 @@ public class GameCanvas extends JPanel {
     public void renderAll() {
         GameObjectManager.instance.renderAll(this.graphics);
         this.anchor.render(graphics);
+        this.largeObject.render(graphics);
+        this.graphics.setColor(Color.WHITE);
 
         graphics.fillOval((int) player.getPosition().x - 3, (int)player.getPosition().y - 4, 7, 7);
         if (!anchor.isCatching) {

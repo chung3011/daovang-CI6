@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Background {
+public class Background extends GameObject {
     public Vector2D position;
     public Renderer renderer;
 
@@ -10,6 +10,7 @@ public class Background {
         this.renderer = new BackgroundRenderer(1650, 1080, Color.BLACK);
     }
 
+    @Override
     public void render(Graphics graphics) {
         this.renderer.render(graphics, this.position);
     }

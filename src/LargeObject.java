@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-public class LargeObject {
+public class LargeObject extends GameObject implements PhysicBody {
 
     Vector2D position;
     BoxCollider boxCollider;
@@ -23,20 +23,32 @@ public class LargeObject {
         this.isAlive = true;
     }
 
-    public void render(Graphics graphics) {
-        if (this.isAlive) {
-            this.renderer.render(graphics, this.position);
-        }
-    }
-
-    public void run(Anchor anchor) {
+    @Override
+    public void run() {
         if (isCaught) {
+            Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {
                 this.isAlive = false;
             }
             else this.position.set(anchor.position);
 
 
+        }
+    }
+
+    public void getHit() {
+        this.isCaught = true;
+    }
+
+    @Override
+    public BoxCollider getBoxCollider() {
+        return this.boxCollider;
+    }
+
+    @Override
+    public void render(Graphics graphics) {
+        if (this.isAlive) {
+            this.renderer.render(graphics, this.position);
         }
     }
 

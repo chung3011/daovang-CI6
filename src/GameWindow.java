@@ -32,10 +32,7 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                   gameCanvas.anchor.isCatching = true;
-                   gameCanvas.ropeDirection.set(gameCanvas.anchor.position);
-                   gameCanvas.movingDirection.set(gameCanvas.anchor.position.subtractBy(gameCanvas.player.getPosition()).normalize().multiply(3));
-                   gameCanvas.anchor.isDropping = true;
+                    gameCanvas.startCatching();
                 }
 
             }

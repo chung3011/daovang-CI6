@@ -11,12 +11,8 @@ public class GameCanvas extends JPanel {
     private final int WIDTH = 1650;
     public final int HEIGHT = 1080;
 
-    public Anchor anchor;
-    public Player player;
-    public Background background;
 
-    public SmallObject smallObject;
-    public LargeObject largeObject;
+
     Vector2D ropeDirection;
     Vector2D movingDirection;
 
@@ -29,16 +25,17 @@ public class GameCanvas extends JPanel {
 
         this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
         this.graphics = backBuffer.getGraphics();
-        this.background = new Background();
 
-        this.anchor = new Anchor();
-        this.player = new Player();
+        GameObjectManager.instance.add(new Anchor());
+        GameObjectManager.instance.add(new Player());
+        GameObjectManager.instance.add(new Background());
+
+        GameObjectManager.instance.add(new SmallObject());
+        GameObjectManager.instance.add(new LargeObject());
 
         this.ropeDirection = new Vector2D();
         this.movingDirection = new Vector2D();
 
-        this.smallObject = new SmallObject();
-        this.largeObject = new LargeObject();
 
         this.setVisible(true);
 
@@ -51,31 +48,24 @@ public class GameCanvas extends JPanel {
 
     }
 
+    public void startCatching() {
+        Anchor anchor = GameObjectManager.instance.findAnchor();
+        Player player = GameObjectManager.instance.findPlayer();
+        anchor.isCatching = true;
+        anchor.isDropping = true;
+        anchor.ropeDirection.set(anchor.position);
+        anchor.movingDirection.set(anchor.position.subtractBy(player.getPosition()).normalize().multiply(3));
+    }
+
     public void runAll() {
-        anchor.run(player.getPosition(), ropeDirection, movingDirection);
-        largeObject.run(anchor);
-        if (anchor.boxCollider.checkBoxCollider(largeObject.boxCollider)) {
-            largeObject.isCaught = true;
-            anchor.isDropping = false;
-        }
+        GameObjectManager.instance.runAll();
+
     }
 
     public void renderAll() {
-        this.background.render(graphics);
-        this.graphics.setColor(Color.WHITE);
-        graphics.fillOval((int) player.getPosition().x - 3, (int)player.getPosition().y - 4, 7, 7);
+        GameObjectManager.instance.renderAll(this.graphics);
 
-        if (!anchor.isCatching) {
-            graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y, (int) anchor.position.x, (int) anchor.position.y);
-        }
 
-        else if (anchor.isCatching) {
-            graphics.drawLine((int) player.getPosition().x, (int) player.getPosition().y, (int) ropeDirection.x, (int) ropeDirection.y);
-        }
-        this.anchor.render(graphics);
-
-        this.smallObject.render(graphics);
-        this.largeObject.render(graphics);
 
 
 //        graphics.fillOval((int) ballPosition.x - 7, (int) ballPosition.y - 7, 14, 14);

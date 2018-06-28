@@ -36,11 +36,9 @@ public class Anchor extends GameObject implements PhysicBody  {
     }
 
 
-    public void run() {
-        Player player = GameObjectManager.instance.findPlayer();
-        if (player != null) {
-            this.playerPosition.set(player.getPosition());
-        }
+    public void run(Player player) {
+        this.playerPosition.set(player.getPosition());
+
 
         if (!isCatching) {
             this.angleAccel = -9.81 / STRING_LENGTH * Math.sin(this.angle );

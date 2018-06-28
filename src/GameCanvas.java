@@ -39,21 +39,14 @@ public class GameCanvas extends JPanel {
     }
 
     public void startCatching() {
-        this.anchor.isCatching = true;
-        this.anchor.isDropping = true;
-        this.anchor.ropeDirection.set(anchor.position);
-        this.anchor.movingDirection.set(this.anchor.position.subtractBy(this.player.getPosition()).normalize().multiply(3));
+        Anchor anchor = GameObjectManager.instance.findAnchor();
+        anchor.isCatching = true;
+        anchor.isDropping = true;
+        anchor.ropeDirection.set(anchor.position);
+        anchor.movingDirection.set(this.anchor.position.subtractBy(this.player.getPosition()).normalize().multiply(3));
     }
 
     public void runAll() {
-        this.anchor.run(this.player);
-        this.largeObject.run(anchor);
-        largeObject.run(anchor);
-        if (anchor.boxCollider.checkBoxCollider(largeObject.boxCollider)) {
-            largeObject.isCaught = true;
-            anchor.isDropping = false;
-        }
-
         GameObjectManager.instance.runAll();
 
     }

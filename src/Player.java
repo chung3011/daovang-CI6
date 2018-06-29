@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Player extends GameObject {
 
 
@@ -11,4 +13,10 @@ public class Player extends GameObject {
     public Vector2D getPosition() {
         return this.position;
     }
+
+    @Override
+    public void render(Graphics graphics) {
+        graphics.fillOval((int) this.position.x - 3, (int) this.position.y - 4, 7, 7);
+    }
+
 }

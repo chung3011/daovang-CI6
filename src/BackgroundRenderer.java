@@ -19,3 +19,4 @@ public class BackgroundRenderer implements Renderer {
         graphics.fillRect((int) position.x, (int) position.y, this.width, this.height);
     }
 }
+

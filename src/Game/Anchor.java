@@ -1,6 +1,13 @@
-import java.awt.*;
+package Game;
 
-public class Anchor extends GameObject implements PhysicBody  {
+import Base.GameObject;
+import Base.GameObjectManager;
+import Base.Vector2D;
+import Physic.PhysicBody;
+import Physic.BoxCollider;
+import Renderer.ImageRenderer;
+
+public class Anchor extends GameObject implements PhysicBody {
 
     private final int WINDOW_WIDTH = 1650;
     private final int WINDOW_HEIGHT = 1080;

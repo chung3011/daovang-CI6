@@ -1,3 +1,10 @@
+package Base;
+
+import Game.Anchor;
+import Game.Player;
+import Physic.BoxCollider;
+import Physic.PhysicBody;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;

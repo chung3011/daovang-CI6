@@ -1,14 +1,19 @@
-import javax.swing.*;
+package Game;
+
+
+import Base.GameObject;
+import Base.Vector2D;
+import Physic.BoxCollider;
+import Physic.PhysicBody;
+import Renderer.ImageRenderer;
+
 import java.awt.*;
 import java.util.Random;
 
-public class SmallObject extends GameObject {
+public class SmallObject extends GameObject implements PhysicBody {
 
-    Vector2D position;
     BoxCollider boxCollider;
-    ImageRenderer renderer;
     Random random;
-
 
     public SmallObject() {
         random = new Random();

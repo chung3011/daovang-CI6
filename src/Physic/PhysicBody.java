@@ -1,3 +1,4 @@
+package Physic;
 
 public interface PhysicBody {
 

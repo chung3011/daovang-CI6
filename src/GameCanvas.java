@@ -1,3 +1,7 @@
+
+import Base.GameObjectManager;
+import Game.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -7,16 +11,13 @@ public class GameCanvas extends JPanel {
     private final int WIDTH = 1650;
     public final int HEIGHT = 1080;
 
-    Vector2D ropeDirection;
-    Vector2D movingDirection;
-
     Graphics graphics;
     BufferedImage backBuffer;
 
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
 
-        this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
+        this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
         this.graphics = backBuffer.getGraphics();
 
         GameObjectManager.instance.add(new Anchor());
@@ -25,9 +26,6 @@ public class GameCanvas extends JPanel {
 
         GameObjectManager.instance.add(new SmallObject());
         GameObjectManager.instance.add(new LargeObject());
-
-        this.ropeDirection = new Vector2D();
-        this.movingDirection = new Vector2D();
 
         this.setVisible(true);
     }

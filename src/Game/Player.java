@@ -1,3 +1,8 @@
+package Game;
+
+import Base.GameObject;
+import Base.Vector2D;
+
 import java.awt.*;
 
 public class Player extends GameObject {

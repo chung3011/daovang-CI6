@@ -1,4 +1,6 @@
+package Renderer;
 
+import Base.Vector2D;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -49,14 +51,14 @@ public class ImageRenderer implements Renderer {
 //import java.io.File;
 //import java.io.IOException;
 //
-//public class ImageRenderer {
+//public class Renderer.ImageRenderer {
 //
 //    private BufferedImage image;
 //    private int width;
 //    private int height;
 //    private Color color;
 //
-//    public ImageRenderer(String path, int width, int height) {
+//    public Renderer.ImageRenderer(String path, int width, int height) {
 //        this.width = width;
 //        this.height = height;
 //        this.image = this.loadImage(path);
@@ -69,7 +71,7 @@ public class ImageRenderer implements Renderer {
 ////        }
 //    }
 //
-//    public void render(Graphics graphics, Vector2D position) {
+//    public void render(Graphics graphics, Base.Vector2D position) {
 //        graphics.drawImage(this.image, (int) position.x, (int) position.y, this.width, this.height, null);
 //    }
 //

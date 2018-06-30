@@ -1,3 +1,8 @@
+package Base;
+
+import Base.Vector2D;
+import Renderer.Renderer;
+
 import java.awt.*;
 
 public class GameObject {

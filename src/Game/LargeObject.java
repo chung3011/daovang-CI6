@@ -17,10 +17,9 @@ public class LargeObject extends GameObject implements PhysicBody {
 
     public LargeObject() {
         random = new Random();
-        this.position = new Vector2D(random.nextInt(1650), random.nextInt(1080));
         this.renderer = new ImageRenderer("resources/images/circle.png", 40, 40);
         this.boxCollider = new BoxCollider( 40,40 );
-        this.boxCollider.position.set((int)this.position.x - 20, (int) this.position.y - 20);
+
         this.isCaught = false;
         this.isAlive = true;
     }

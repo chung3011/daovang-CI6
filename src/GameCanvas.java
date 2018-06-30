@@ -25,7 +25,7 @@ public class GameCanvas extends JPanel {
         GameObjectManager.instance.add(new Background());
 
         GameObjectManager.instance.add(new SmallObject());
-        GameObjectManager.instance.add(new LargeObject());
+        GameObjectManager.instance.add(new LargeObjectGenerator());
 
         this.setVisible(true);
     }

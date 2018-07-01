@@ -4,6 +4,8 @@ import Game.*;
 import Game.ObjectsToCatch.LargeObjectGenerator;
 import Game.ObjectsToCatch.MediumObjectGenerator;
 import Game.ObjectsToCatch.SmallObjectGenerator;
+import scene.SceneManager;
+import scene.StartScene;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,10 +21,25 @@ public class GameCanvas extends JPanel {
 
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
+        this.setUpBackBuffer();
+//        this.setUpCharacters();
 
+        SceneManager.instance.changeScene(new StartScene());
+
+        this.setVisible(true);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        g.drawImage(this.backBuffer,0,0,null);
+    }
+
+    public void setUpBackBuffer() {
         this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
         this.graphics = backBuffer.getGraphics();
+    }
 
+    public void setUpCharacters() {
         GameObjectManager.instance.add(new Anchor());
         GameObjectManager.instance.add(new Player());
         GameObjectManager.instance.add(new Background());
@@ -32,12 +49,6 @@ public class GameCanvas extends JPanel {
         GameObjectManager.instance.add(new MediumObjectGenerator());
         GameObjectManager.instance.add(new BombGenerator());
         GameObjectManager.instance.add(new Player());
-        this.setVisible(true);
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        g.drawImage(this.backBuffer,0,0,null);
     }
 
     public void startCatching() {
@@ -51,6 +62,7 @@ public class GameCanvas extends JPanel {
 
     public void runAll() {
         GameObjectManager.instance.runAll();
+        SceneManager.instance.performChangeSceneIfNeeded();
     }
 
     public void renderAll() {

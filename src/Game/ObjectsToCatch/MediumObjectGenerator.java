@@ -1,6 +1,7 @@
 package Game.ObjectsToCatch;
 
 import Action.ActionAdapter;
+import Action.LimitAction;
 import Action.SequenceAction;
 import Action.WaitAction;
 import Base.GameObject;
@@ -19,29 +20,43 @@ public class MediumObjectGenerator extends GameObject {
     }
 
     public void createAction() {
-        this.addAction(
-                new SequenceAction(
-                        new ActionAdapter() {
+//        this.addAction(
+//                new SequenceAction(
+//                        new ActionAdapter() {
+//
+//                            private List<MediumObject> list = new ArrayList<>();
+//                            private int count = 0;
+//
+//                            @Override
+//                            public boolean run(GameObject owner) {
+//                                if (list.isEmpty()) {
+//                                    MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
+//                                    mediumObject.position.set(30 + random.nextInt(950),150 +  random.nextInt(200));
+//                                    this.count += 1;
+//                                    list.add(mediumObject);
+//                                }
+//
+//                                list.removeIf(mediumObject -> !mediumObject.isAlive);
+//
+//                                return this.count == 5;
+//                            }
+//                        },
+//                        new WaitAction(300)
+//                )
+//        );
 
-                            private List<MediumObject> list = new ArrayList<>();
-                            private int count = 0;
-
-                            @Override
-                            public boolean run(GameObject owner) {
-                                if (list.isEmpty()) {
-                                    MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
-                                    mediumObject.position.set(30 + random.nextInt(950),150 +  random.nextInt(200));
-                                    this.count += 1;
-                                    list.add(mediumObject);
-                                }
-
-                                list.removeIf(mediumObject -> !mediumObject.isAlive);
-
-                                return this.count == 5;
-                            }
-                        },
-                        new WaitAction(300)
-                )
+        this.addAction(new LimitAction(
+                new ActionAdapter() {
+                    @Override
+                    public boolean run(GameObject owner) {
+                        LargeObject largeObject = GameObjectManager.instance.recycle(LargeObject.class);
+                        largeObject.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
+                        largeObject.boxCollider.position.set((int) largeObject.position.x - 20, (int) largeObject.position.y - 20);
+                        System.out.println(largeObject.position.x + " " + largeObject.position.y);
+                        return true;
+                    }
+                },
+                4)
         );
     }
 

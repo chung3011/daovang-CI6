@@ -11,6 +11,8 @@ import Physic.BoxCollider;
 import Physic.RunHitObject;
 import Renderer.ImageRenderer;
 
+import java.awt.*;
+
 public class Anchor extends GameObject implements PhysicBody {
 
     private final int WINDOW_WIDTH = 1024;
@@ -111,6 +113,12 @@ public class Anchor extends GameObject implements PhysicBody {
     public BoxCollider getBoxCollider(){
         return this.boxCollider;
     }
+
+//    @Override
+//    public void render(Graphics graphics) {
+//
+//    }
+
 
     @Override
     public void getHit(GameObject gameObject) {

@@ -13,7 +13,6 @@ public class Button extends GameObject {
     public int width, height;
 
 
-
     public Button( Vector2D position,int width, int height, String label, String path){
         this.position = position;
         this.width = width;

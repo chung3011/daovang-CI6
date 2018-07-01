@@ -41,18 +41,19 @@ public class GameObjectManager {
                 .filter(gameObject -> gameObject.isAlive)
                 .forEach(gameObject -> gameObject.render(graphics));
 
-
-        graphics.setColor(Color.WHITE);
-        Player player = this.findPlayer();
         Anchor anchor = this.findAnchor();
+        if (anchor != null) {
+            Player player = this.findPlayer();
+            graphics.setColor(Color.WHITE);
 
-        if (!anchor.isCatching) {
-            graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y, (int) anchor.position.x, (int) anchor.position.y);
-        }
-
-        else if (anchor.isCatching) {
-            graphics.drawLine((int) player.getPosition().x, (int) player.getPosition().y,
-                    (int) anchor.ropeDirection.x, (int) anchor.ropeDirection.y);
+            if (!anchor.isCatching) {
+                graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y,
+                        (int) anchor.position.x, (int) anchor.position.y);
+            }
+            else if (anchor.isCatching) {
+                graphics.drawLine((int) player.getPosition().x, (int) player.getPosition().y,
+                        (int) anchor.ropeDirection.x, (int) anchor.ropeDirection.y);
+            }
         }
     }
 
@@ -104,5 +105,10 @@ public class GameObjectManager {
                 .filter(gameObject -> gameObject instanceof Anchor)
                 .findFirst()
                 .orElse(null);
+    }
+
+    public void clear(){
+        this.list.clear();
+        this.tempList.clear();
     }
 }

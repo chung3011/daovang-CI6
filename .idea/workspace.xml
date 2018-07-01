@@ -2,33 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e5adb0-049a-4f07-b09b-56f8298d56c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Base/FrameCounter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Base/GameObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Base/GameObjectManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Base/Vector2D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/Anchor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/Background.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/LargeObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/LargeObjectGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/MediumObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/SmallObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/GameCanvas.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/GameWindow$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/GameWindow$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/GameWindow.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Physic/BoxCollider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Physic/PhysicBody.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Renderer/BackgroundRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Renderer/ImageRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/FinalProject/Renderer/Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/LargeObjectGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/LargeObjectGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Renderer/TextRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scene/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalProject/Game/LargeObjectGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalProject/Game/LargeObjectGenerator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +20,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LargeObjectGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LargeObjectGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/LargeObjectGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="e#561#1187#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#1285#1325#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/SceneManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Text.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Game/Text.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextRenderer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Renderer/TextRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -63,18 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Anchor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-              <folding>
-                <element signature="e#2359#2471#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +123,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -111,13 +143,18 @@
         <option value="$PROJECT_DIR$/src/Game/Player.java" />
         <option value="$PROJECT_DIR$/src/Game/Anchor.java" />
         <option value="$PROJECT_DIR$/src/Game/LargeObjectGenerator.java" />
+        <option value="$PROJECT_DIR$/src/scene/Scene.java" />
+        <option value="$PROJECT_DIR$/src/scene/SceneManager.java" />
+        <option value="$PROJECT_DIR$/src/Game/Button.java" />
+        <option value="$PROJECT_DIR$/src/Game/Text.java" />
+        <option value="$PROJECT_DIR$/src/Renderer/TextRenderer.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -160,19 +197,27 @@
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Physic" type="462c0819:PsiDirectoryNode" />
+              <item name="Renderer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Renderer" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/clone/CI6-Project-ATA" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Renderer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -265,11 +310,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1608073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -288,18 +333,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GameObjectManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/Player.java" />
-    <entry file="file://$PROJECT_DIR$/src/ImageRenderer.java" />
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LargeObject.java" />
-    <entry file="file://$PROJECT_DIR$/src/BackgroundRenderer.java" />
     <entry file="file://$PROJECT_DIR$/src/BoxCollider.java" />
     <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -420,7 +453,7 @@
     <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
-          <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
           <folding>
             <element signature="e#2359#2471#0" />
           </folding>
@@ -469,10 +502,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/clone/CI6-Project-ATA/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/LargeObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#561#1187#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1285#1325#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/SceneManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer/TextRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

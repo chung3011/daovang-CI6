@@ -14,15 +14,15 @@ public class LargeObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public LargeObject() {
-        this.renderer = new ImageRenderer("resources/images/circle.png", 60, 60);
+        this.renderer = new ImageRenderer("resources/images/borua-pixilart (1).png", 60, 60);
         this.boxCollider = new BoxCollider( 60,60 );
 
         this.isCaught = false;
-        this.isAlive = true;
     }
 
     @Override
     public void run() {
+        this.boxCollider.position.set((int) this.position.x - 20, (int) this.position.y - 20);
         if (isCaught) {
             Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {

@@ -3,13 +3,10 @@ package Game;
 
 import Base.GameObject;
 import Base.GameObjectManager;
-import Base.Vector2D;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
 
-import java.awt.*;
-import java.util.Random;
 
 public class SmallObject extends GameObject implements PhysicBody {
 
@@ -17,15 +14,14 @@ public class SmallObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public SmallObject() {
-        this.renderer = new ImageRenderer("resources/images/circle.png", 20, 20);
+        this.renderer = new ImageRenderer("resources/images/ongmat-pixilart.png", 20, 20);
         this.boxCollider = new BoxCollider( 20,20 );
-
         this.isCaught = false;
-        this.isAlive = true;
     }
 
     @Override
     public void run() {
+        this.boxCollider.position.set((int) this.position.x - 10, (int) this.position.y - 10);
         if (isCaught) {
             Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {

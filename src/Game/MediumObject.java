@@ -11,19 +11,20 @@ public class MediumObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public MediumObject() {
-        this.renderer = new ImageRenderer("resources/images/circle.png", 40, 40);
+        this.renderer = new ImageRenderer("resources/images/con-gian-pixilart.png", 40, 40);
         this.boxCollider = new BoxCollider( 40,40 );
-
         this.isCaught = false;
-        this.isAlive = true;
     }
 
     @Override
     public void run() {
+        super.run();
+        this.boxCollider.position.set((int) this.position.x - 20, (int) this.position.y - 20);
         if (isCaught) {
             Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {
                 this.isAlive = false;
+                this.isCaught = false;
             }
             else this.position.set(anchor.position);
         }

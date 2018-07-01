@@ -1,5 +1,7 @@
 package Game;
 
+import Action.ActionAdapter;
+import Action.LimitAction;
 import Base.FrameCounter;
 import Base.GameObject;
 import Base.GameObjectManager;
@@ -12,18 +14,24 @@ public class SmallObjectGenerator extends GameObject {
 
     public SmallObjectGenerator() {
         this.random = new Random();
-        this.frameCounter = new FrameCounter(30);
+        this.createAction();
     }
 
+    public void createAction() {
+        this.addAction(new LimitAction(
+                new ActionAdapter() {
+                    @Override
+                    public boolean run(GameObject owner) {
+                        SmallObject smallObject = GameObjectManager.instance.recycle(SmallObject.class);
+                        smallObject.position.set(200 + random.nextInt(400),200 +  random.nextInt(200));
+                        return true;
+                    }
+                },
+                5)
+        );
+    }
     @Override
     public void run() {
         super.run();
-        if (this.frameCounter.run()) {
-            SmallObject smallObject = new SmallObject();
-            smallObject.position.set(this.random.nextInt(1650), this.random.nextInt(1080));
-            smallObject.boxCollider.position.set((int)smallObject.position.x - 20, (int) smallObject.position.y - 20);
-            GameObjectManager.instance.add(smallObject);
-            this.frameCounter.reset();
-        }
     }
 }

@@ -99,7 +99,7 @@ public class Anchor extends GameObject implements PhysicBody {
         this.isDropping = false;
 
         if (gameObject instanceof LargeObject) {
-            movingDirection.multiply(1.0f/3.0f);
+            movingDirection.multiply(1.0f/4.0f);
         }
 
         else if (gameObject instanceof MediumObject) {

@@ -7,18 +7,15 @@ import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
 
-import java.util.Random;
 
 public class LargeObject extends GameObject implements PhysicBody {
 
-    BoxCollider boxCollider;
-    Random random;
-    boolean isCaught;
+    public BoxCollider boxCollider;
+    private boolean isCaught;
 
     public LargeObject() {
-        random = new Random();
-        this.renderer = new ImageRenderer("resources/images/circle.png", 40, 40);
-        this.boxCollider = new BoxCollider( 40,40 );
+        this.renderer = new ImageRenderer("resources/images/circle.png", 60, 60);
+        this.boxCollider = new BoxCollider( 60,60 );
 
         this.isCaught = false;
         this.isAlive = true;
@@ -36,7 +33,8 @@ public class LargeObject extends GameObject implements PhysicBody {
 
     }
 
-    public void getHit() {
+    @Override
+    public void getHit(GameObject gameObject) {
         this.isCaught = true;
     }
 
@@ -44,6 +42,5 @@ public class LargeObject extends GameObject implements PhysicBody {
     public BoxCollider getBoxCollider() {
         return this.boxCollider;
     }
-
 
 }

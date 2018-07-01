@@ -2,6 +2,7 @@ package Game;
 
 
 import Base.GameObject;
+import Base.GameObjectManager;
 import Base.Vector2D;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
@@ -12,24 +13,38 @@ import java.util.Random;
 
 public class SmallObject extends GameObject implements PhysicBody {
 
-    BoxCollider boxCollider;
-    Random random;
+    public BoxCollider boxCollider;
+    private boolean isCaught;
 
     public SmallObject() {
-        random = new Random();
-        this.position = new Vector2D(random.nextInt(1650), random.nextInt(1080));
         this.renderer = new ImageRenderer("resources/images/circle.png", 20, 20);
-        this.boxCollider = new BoxCollider( (int) this.position.x - 10, (int) this.position.y - 10);
+        this.boxCollider = new BoxCollider( 20,20 );
+
+        this.isCaught = false;
+        this.isAlive = true;
     }
 
-    public BoxCollider getBoxCollider() {
-        return  this.boxCollider;
+    @Override
+    public void run() {
+        if (isCaught) {
+            Anchor anchor = GameObjectManager.instance.findAnchor();
+            if (!anchor.isCatching) {
+                this.isAlive = false;
+            }
+            else this.position.set(anchor.position);
+        }
 
     }
 
     @Override
-    public void render(Graphics graphics) {
-        this.renderer.render(graphics, this.position);
+    public void getHit(GameObject gameObject) {
+        this.isCaught = true;
     }
+
+    @Override
+    public BoxCollider getBoxCollider() {
+        return this.boxCollider;
+    }
+
 }
 

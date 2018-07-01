@@ -1,27 +1,29 @@
-package Game;
-
+package Game.ObjectsToCatch;
 
 import Base.GameObject;
 import Base.GameObjectManager;
+import Base.Vector2D;
+import Game.Anchor;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
 
 
-public class SmallObject extends GameObject implements PhysicBody {
+public class LargeObject extends GameObject implements PhysicBody {
 
     public BoxCollider boxCollider;
     private boolean isCaught;
 
-    public SmallObject() {
-        this.renderer = new ImageRenderer("resources/images/ongmat-pixilart.png", 25, 25);
-        this.boxCollider = new BoxCollider( 20,20 );
+    public LargeObject() {
+        this.renderer = new ImageRenderer("resources/images/borua-pixilart (1).png", 60, 60);
+        this.boxCollider = new BoxCollider( 55,55 );
+
         this.isCaught = false;
     }
 
     @Override
     public void run() {
-        this.boxCollider.position.set((int) this.position.x - 10, (int) this.position.y - 10);
+        this.boxCollider.position.set((int) this.position.x - 20, (int) this.position.y - 20);
         if (isCaught) {
             Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {
@@ -43,4 +45,3 @@ public class SmallObject extends GameObject implements PhysicBody {
     }
 
 }
-

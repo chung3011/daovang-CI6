@@ -1,7 +1,9 @@
 
-import Base.GameObject;
 import Base.GameObjectManager;
 import Game.*;
+import Game.ObjectsToCatch.LargeObjectGenerator;
+import Game.ObjectsToCatch.MediumObjectGenerator;
+import Game.ObjectsToCatch.SmallObjectGenerator;
 
 import javax.swing.*;
 import java.awt.*;

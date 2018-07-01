@@ -1,9 +1,8 @@
-package Game;
+package Game.ObjectsToCatch;
 
 import Action.ActionAdapter;
 import Action.SequenceAction;
 import Action.WaitAction;
-import Base.FrameCounter;
 import Base.GameObject;
 import Base.GameObjectManager;
 

@@ -64,7 +64,7 @@ public class Anchor extends GameObject implements PhysicBody {
         }
 
         if (isCatching) {
-            if (ropeDirection.x > WINDOW_WIDTH || ropeDirection.y > WINDOW_HEIGHT || ropeDirection.x < 0) {
+            if (ropeDirection.x > WINDOW_WIDTH - 10 || ropeDirection.y > WINDOW_HEIGHT -10 || ropeDirection.x < 0) {
                 isDropping = false;
             }
 

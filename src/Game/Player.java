@@ -11,7 +11,7 @@ public class Player extends GameObject {
     private final int WINDOW_HEIGHT = 600;
 
     public Player() {
-        this.position = new Vector2D(WINDOW_WIDTH/3 + 200, WINDOW_HEIGHT/7);
+        this.position = new Vector2D(WINDOW_WIDTH/2, WINDOW_HEIGHT/7);
         System.out.println(position.x + "  " + position.y);
     }
 

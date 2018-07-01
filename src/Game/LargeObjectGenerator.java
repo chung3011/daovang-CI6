@@ -26,7 +26,7 @@ public class LargeObjectGenerator extends GameObject {
                     @Override
                     public boolean run(GameObject owner) {
                         LargeObject largeObject = GameObjectManager.instance.recycle(LargeObject.class);
-                        largeObject.position.set(30 + random.nextInt(950),400 +  random.nextInt(200));
+                        largeObject.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
                         largeObject.boxCollider.position.set((int) largeObject.position.x - 20, (int) largeObject.position.y - 20);
                         System.out.println(largeObject.position.x + " " + largeObject.position.y);
                         return true;

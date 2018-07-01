@@ -12,7 +12,7 @@ public class MediumObject extends GameObject implements PhysicBody {
 
     public MediumObject() {
         this.renderer = new ImageRenderer("resources/images/con-gian-pixilart.png", 40, 40);
-        this.boxCollider = new BoxCollider( 40,40 );
+        this.boxCollider = new BoxCollider( 35,35 );
         this.isCaught = false;
     }
 

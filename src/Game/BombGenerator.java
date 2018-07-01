@@ -34,7 +34,6 @@ public class BombGenerator extends GameObject {
                                     bom.position.set(30 + random.nextInt(950),100 +  random.nextInt(200));
                                     this.count += 1;
                                     list.add(bom);
-                                    System.out.println(count);
                                 }
 
                                 list.removeIf(mediumObject -> !mediumObject.isAlive);

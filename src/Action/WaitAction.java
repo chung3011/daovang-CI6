@@ -9,7 +9,6 @@ public class WaitAction implements Action {
 
     public WaitAction(int timeInterval) {
         this.frameCounter = new FrameCounter(timeInterval);
-        System.out.println("wait action");
     }
 
     @Override

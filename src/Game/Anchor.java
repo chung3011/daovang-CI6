@@ -26,6 +26,7 @@ public class Anchor extends GameObject implements PhysicBody {
 
     public boolean isDropping = false;
     public boolean isCatching = false;
+    private boolean isBomb = false;
 
     public Vector2D playerPosition;
     public Vector2D ropeDirection;
@@ -43,7 +44,8 @@ public class Anchor extends GameObject implements PhysicBody {
         this.runHitObject = new RunHitObject(
                 LargeObject.class,
                 MediumObject.class,
-                SmallObject.class);
+                SmallObject.class,
+                Bomb.class);
 
         this.angle = Math.PI / 2;
     }
@@ -74,10 +76,12 @@ public class Anchor extends GameObject implements PhysicBody {
             }
 
             if (!isDropping) {
-//                if( (playerPosition.y -10 <= ropeDirection.y || ropeDirection.y <= playerPosition.y + 10) && (
-//                        playerPosition.x-10 <= ropeDirection.x && ropeDirection.x <= playerPosition.x + 10) ) {
                 if (ropeDirection.subtract(playerPosition).length() <= 10) {
                     isCatching = false;
+                    if (isBomb) {
+                        System.out.println("GAME OVER");
+                        System.exit(1);
+                    }
 
                 }
                 else ropeDirection.subtractBy(movingDirection);
@@ -104,6 +108,10 @@ public class Anchor extends GameObject implements PhysicBody {
 
         else if (gameObject instanceof MediumObject) {
             movingDirection.multiply(1.0f/2.0f);
+        }
+
+        else if (gameObject instanceof Bomb) {
+            isBomb = true;
         }
     }
 

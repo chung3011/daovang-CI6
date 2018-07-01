@@ -16,12 +16,16 @@ public class GameCanvas extends JPanel {
     private final int WIDTH = 1024;
     public final int HEIGHT = 600;
 
+    public int scene;
+
     Graphics graphics;
     BufferedImage backBuffer;
 
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
         this.setUpBackBuffer();
+
+        this.scene = 0;
 //        this.setUpCharacters();
 
         SceneManager.instance.changeScene(new StartScene());

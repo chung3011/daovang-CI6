@@ -1,3 +1,6 @@
+import scene.GamePlayScene;
+import scene.SceneManager;
+
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -32,7 +35,13 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                    gameCanvas.startCatching();
+                    if (gameCanvas.scene == 0) {
+                        SceneManager.instance.changeScene(new GamePlayScene());
+                        gameCanvas.scene++;
+                    }
+                    else if (gameCanvas.scene == 1) {
+                        gameCanvas.startCatching();
+                    }
                 }
 
             }

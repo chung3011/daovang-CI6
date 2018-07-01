@@ -67,8 +67,9 @@ public class Anchor extends GameObject implements PhysicBody {
             }
 
             if (!isDropping) {
-                if( (playerPosition.y -10 <= ropeDirection.y || ropeDirection.y <= playerPosition.y + 10) && (
-                        playerPosition.x-10 <= ropeDirection.x && ropeDirection.x <= playerPosition.x + 10) ) {
+//                if( (playerPosition.y -10 <= ropeDirection.y || ropeDirection.y <= playerPosition.y + 10) && (
+//                        playerPosition.x-10 <= ropeDirection.x && ropeDirection.x <= playerPosition.x + 10) ) {
+                if (ropeDirection.subtract(playerPosition).length() <= 3) {
                     isCatching = false;
 
                 }

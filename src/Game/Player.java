@@ -7,7 +7,6 @@ import java.awt.*;
 
 public class Player extends GameObject {
 
-
     private final int WINDOW_WIDTH = 1650;
     private final int WINDOW_HEIGHT = 1080;
 

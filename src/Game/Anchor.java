@@ -17,8 +17,6 @@ public class Anchor extends GameObject implements PhysicBody {
     private final int HEIGHT = 20;
     private final int STRING_LENGTH = 100;
 
-    public BoxCollider boxCollider;
-
     public double angle;
     public double angleAccel = 0;
     public double angleVelocity = 0;
@@ -32,7 +30,10 @@ public class Anchor extends GameObject implements PhysicBody {
     public Vector2D ropeDirection;
     public Vector2D movingDirection;
 
+    public BoxCollider boxCollider;
     private RunHitObject runHitObject;
+
+    public Level level;
 
     public Anchor() {
         this.renderer = new ImageRenderer("resources/images/anchor.png", WIDTH,HEIGHT);
@@ -48,6 +49,7 @@ public class Anchor extends GameObject implements PhysicBody {
                 Bomb.class);
 
         this.angle = Math.PI / 2;
+        this.level = new Level();
     }
 
 
@@ -90,6 +92,15 @@ public class Anchor extends GameObject implements PhysicBody {
 
         }
         boxCollider.position.set( (int) this.position.x - 10, (int) this.position.y - 10 );
+
+        if (this.level.isCompleted() && this.level.getLevel() == 1) {
+            System.out.println("NEXT LEVEL!");
+            level.levelUp();
+        }
+
+        if (this.level.isCompleted() && this.level.getLevel() == 2) {
+            System.out.println("YOU WIN!");
+        }
     }
 
 
@@ -104,10 +115,16 @@ public class Anchor extends GameObject implements PhysicBody {
 
         if (gameObject instanceof LargeObject) {
             movingDirection.multiply(1.0f/4.0f);
+            level.addLargeObjects();
         }
 
         else if (gameObject instanceof MediumObject) {
             movingDirection.multiply(1.0f/2.0f);
+            level.addMediumObjects();
+        }
+
+        else if (gameObject instanceof SmallObject) {
+            level.addSmallObjects();
         }
 
         else if (gameObject instanceof Bomb) {

@@ -1,11 +1,9 @@
 package scene;
 
 
-import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
-import Game.Background;
 import Game.Button;
 
 public class StartScene implements Scene {

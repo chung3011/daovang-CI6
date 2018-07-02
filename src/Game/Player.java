@@ -12,7 +12,7 @@ public class Player extends GameObject {
     private final int WINDOW_HEIGHT = 600;
 
     public Player() {
-        this.renderer = new ImageRenderer("resources/images/nhennhen-pixilart.png", 60, 60);
+        this.renderer = new ImageRenderer("resources/images/Objects/nhennhen-pixilart.png", 60, 60);
         this.position = new Vector2D(WINDOW_WIDTH/2, WINDOW_HEIGHT/7);
 //        System.out.println(position.x + "  " + position.y);
     }

@@ -12,7 +12,7 @@ public class MediumObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public MediumObject() {
-        this.renderer = new ImageRenderer("resources/images/chuonchuon-pixilart.png", 40, 40);
+        this.renderer = new ImageRenderer("resources/images/Objects/chuonchuon-pixilart.png", 40, 40);
         this.boxCollider = new BoxCollider( 35,35 );
         this.isCaught = false;
     }

@@ -1,4 +1,4 @@
-package Game;
+package Game.Bomb;
 
 import Action.ActionAdapter;
 import Action.SequenceAction;

@@ -8,7 +8,7 @@ import Renderer.ImageRenderer;
 public class SmallObjectIcon extends GameObject {
 
     public SmallObjectIcon() {
-        this.renderer = new ImageRenderer("resources/images/ongmat-pixilart.png", 20, 20);
+        this.renderer = new ImageRenderer("resources/images/Objects/ongmat-pixilart.png", 20, 20);
         this.position = new Vector2D();
     }
 

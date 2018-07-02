@@ -1,4 +1,4 @@
-package Game;
+package Game.Background;
 
 import Base.GameObject;
 import Constant.Constant;
@@ -13,7 +13,7 @@ public class Background extends GameObject {
 //    Renderer renderer;
 
     public Background() {
-        this.renderer = new BackgroundRenderer("resources/images/luoinhenchuan3'-pixilart.png", Constant.Window.WIDTH,
+        this.renderer = new BackgroundRenderer("resources/images/luoinhenchuan3'-pixilart (1).png", Constant.Window.WIDTH,
                 Constant.Window.HEIGHT);
     }
 

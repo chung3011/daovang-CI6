@@ -1,4 +1,4 @@
-package Game;
+package Game.Background;
 
 import Base.GameObject;
 import Renderer.IntroBackGroundRenderer;

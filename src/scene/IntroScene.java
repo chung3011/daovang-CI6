@@ -3,9 +3,8 @@ package scene;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
-import Game.Background;
 import Game.Button;
-import Game.IntroBackGround;
+import Game.Background.IntroBackGround;
 
 public class IntroScene implements Scene {
     @Override
@@ -16,8 +15,14 @@ public class IntroScene implements Scene {
                 new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2-50) ,
                 300,
                 300,
-                "winningCondition","resources/images/dieu-kien-thang-1-pixilart.png"); // "Start Button"
+                "winningCondition","resources/images/LevelOne/dieu-kien-thang-1-pixilart.png"); // "Start Button"
 
+
+        Button conditionsWording = new Button(
+                new Vector2D(200, Constant.Window.HEIGHT/2),
+                300,
+                300,
+                "conditionsWording", "resources/images/winning-condition-pixilart.png");
 
         Button startButton = new Button(
                 new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2+200) ,
@@ -28,6 +33,7 @@ public class IntroScene implements Scene {
         GameObjectManager.instance.recycle(IntroBackGround.class);
         GameObjectManager.instance.add(winningConditions);
         GameObjectManager.instance.add(startButton);
+        GameObjectManager.instance.add(conditionsWording);
     }
 
     @Override

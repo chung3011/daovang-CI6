@@ -1,21 +1,21 @@
-package Game;
+package Game.Effect;
 
 import Base.GameObject;
 import Base.GameObjectManager;
-import Base.Vector2D;
+import Game.Anchor;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
 
-public class SpeedEffect extends GameObject implements PhysicBody {
+public class ShieldEffect extends GameObject implements PhysicBody {
     public BoxCollider boxCollider;
     private boolean isCaught;
 
-    public SpeedEffect() {
-        this.renderer = new ImageRenderer("resources/images/buombuom-pixilart.png", 50, 50);
+    public ShieldEffect() {
+        this.renderer = new ImageRenderer("resources/images/Objects/buomhong-pixilart.png", 50, 50);
         this.boxCollider = new BoxCollider( 50,50 );
-        this.position = new Vector2D(150, 150);
         this.isCaught = false;
+        this.position.set(500,150);
     }
 
     @Override
@@ -41,6 +41,5 @@ public class SpeedEffect extends GameObject implements PhysicBody {
     public BoxCollider getBoxCollider() {
         return this.boxCollider;
     }
-
 
 }

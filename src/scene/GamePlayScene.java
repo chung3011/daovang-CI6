@@ -1,8 +1,11 @@
 package scene;
 
-import Base.GameObject;
 import Base.GameObjectManager;
 import Game.*;
+import Game.Background.Background;
+import Game.Bomb.BombGenerator;
+import Game.Effect.ShieldEffect;
+import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObjectGenerator;
 import Game.ObjectsToCatch.MediumObject.MediumObjectGenerator;
 import Game.ObjectsToCatch.SmallObject.SmallObjectGenerator;

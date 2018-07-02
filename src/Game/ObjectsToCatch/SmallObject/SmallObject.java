@@ -15,7 +15,7 @@ public class SmallObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public SmallObject() {
-        this.renderer = new ImageRenderer("resources/images/ongmat-pixilart.png", 25, 25);
+        this.renderer = new ImageRenderer("resources/images/Objects/ongmat-pixilart.png", 25, 25);
         this.boxCollider = new BoxCollider( 20,20 );
         this.isCaught = false;
     }

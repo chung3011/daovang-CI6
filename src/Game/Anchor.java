@@ -4,14 +4,15 @@ import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
+import Game.Bomb.Bomb;
+import Game.Effect.ShieldEffect;
+import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObject;
 import Game.ObjectsToCatch.MediumObject.MediumObject;
 import Game.ObjectsToCatch.SmallObject.SmallObject;
 import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
-
-import javax.print.attribute.standard.SheetCollate;
 
 public class Anchor extends GameObject implements PhysicBody {
 

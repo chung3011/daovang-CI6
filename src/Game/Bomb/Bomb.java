@@ -1,25 +1,25 @@
-package Game;
+package Game.Bomb;
 
 import Base.GameObject;
 import Base.GameObjectManager;
+import Game.Anchor;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
 
-public class ShieldEffect extends GameObject implements PhysicBody {
+public class Bomb extends GameObject implements PhysicBody {
     public BoxCollider boxCollider;
     private boolean isCaught;
 
-    public ShieldEffect() {
-        this.renderer = new ImageRenderer("resources/images/demen-pixilart.png", 50, 50);
-        this.boxCollider = new BoxCollider( 50,50 );
+    public Bomb() {
+        this.renderer = new ImageRenderer("resources/images/Objects/con-gian-pixilart.png", 26, 26);
+        this.boxCollider = new BoxCollider( 26,26 );
         this.isCaught = false;
-        this.position.set(500,150);
     }
 
     @Override
     public void run() {
-        this.boxCollider.position.set((int) this.position.x - 25, (int) this.position.y - 25);
+        this.boxCollider.position.set((int) this.position.x - 13, (int) this.position.y - 13);
         if (isCaught) {
             Anchor anchor = GameObjectManager.instance.findAnchor();
             if (!anchor.isCatching) {

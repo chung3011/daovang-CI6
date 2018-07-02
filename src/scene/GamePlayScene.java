@@ -1,11 +1,10 @@
 package scene;
 
-import Base.GameObject;
 import Base.GameObjectManager;
 import Game.*;
-import Game.ObjectsToCatch.LargeObjectGenerator;
-import Game.ObjectsToCatch.MediumObjectGenerator;
-import Game.ObjectsToCatch.SmallObjectGenerator;
+import Game.ObjectsToCatch.LargeObject.LargeObjectGenerator;
+import Game.ObjectsToCatch.MediumObject.MediumObjectGenerator;
+import Game.ObjectsToCatch.SmallObject.SmallObjectGenerator;
 
 public class GamePlayScene implements Scene {
 

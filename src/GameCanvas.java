@@ -1,11 +1,7 @@
 
 import Base.GameObjectManager;
 import Game.*;
-import Game.ObjectsToCatch.LargeObjectGenerator;
-import Game.ObjectsToCatch.MediumObjectGenerator;
-import Game.ObjectsToCatch.SmallObjectGenerator;
 import Input.MouseInput;
-import scene.GamePlayScene;
 import scene.SceneManager;
 import scene.StartScene;
 

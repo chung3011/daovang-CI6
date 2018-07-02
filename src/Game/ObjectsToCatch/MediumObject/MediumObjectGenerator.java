@@ -1,14 +1,10 @@
-package Game.ObjectsToCatch;
+package Game.ObjectsToCatch.MediumObject;
 
 import Action.ActionAdapter;
 import Action.LimitAction;
-import Action.SequenceAction;
-import Action.WaitAction;
 import Base.GameObject;
 import Base.GameObjectManager;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class MediumObjectGenerator extends GameObject {

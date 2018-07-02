@@ -1,4 +1,4 @@
-package Game.ObjectsToCatch;
+package Game.ObjectsToCatch.LargeObject;
 
 import Action.*;
 import Base.GameObject;

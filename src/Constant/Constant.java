@@ -35,5 +35,8 @@ public class Constant {
 
     }
 
+    public static class Icon {
+        public static final int HORIZONTALPOSITION = 15;
+    }
 
 }

@@ -1,4 +1,4 @@
-package Game.ObjectsToCatch;
+package Game.ObjectsToCatch.SmallObject;
 
 import Action.ActionAdapter;
 import Action.LimitAction;

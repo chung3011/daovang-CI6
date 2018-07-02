@@ -4,18 +4,13 @@ import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
-import Game.ObjectsToCatch.LargeObject;
-import Game.ObjectsToCatch.MediumObject;
-import Game.ObjectsToCatch.SmallObject;
+import Game.ObjectsToCatch.*;
+import Game.ObjectsToCatch.LargeObject.LargeObject;
+import Game.ObjectsToCatch.MediumObject.MediumObject;
+import Game.ObjectsToCatch.SmallObject.SmallObject;
 import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
-import Renderer.ImageRenderer;
-import scene.GamePlayScene;
-import scene.Scene;
-import scene.SceneManager;
-
-import java.awt.*;
 
 public class Anchor extends GameObject implements PhysicBody {
 
@@ -124,15 +119,18 @@ public class Anchor extends GameObject implements PhysicBody {
         if (gameObject instanceof LargeObject) {
             movingDirection.multiply(1.0f/4.0f);
             level.addLargeObjects();
+            GameObjectManager.instance.add(IconGenerator.instance.addLargeObjectIcon());
         }
 
         else if (gameObject instanceof MediumObject) {
             movingDirection.multiply(1.0f/2.0f);
             level.addMediumObjects();
+            GameObjectManager.instance.add(IconGenerator.instance.addMediumObjectIcon());
         }
 
         else if (gameObject instanceof SmallObject) {
             level.addSmallObjects();
+            GameObjectManager.instance.add(IconGenerator.instance.addSmallObjectIcon());
         }
 
         else if (gameObject instanceof Bomb) {

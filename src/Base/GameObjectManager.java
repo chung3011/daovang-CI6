@@ -1,6 +1,7 @@
 package Base;
 
 import Game.Anchor;
+import Game.Button;
 import Game.Player;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
@@ -106,6 +107,18 @@ public class GameObjectManager {
                 .findFirst()
                 .orElse(null);
     }
+
+
+    // Bổ sung hàm tìm button
+    public List<Game.Button> findButton(){
+        List<Button> listButton = new ArrayList<>();
+        this.list.stream()
+                .filter(gameObject -> gameObject instanceof Game.Button)
+                .forEach(gameObject ->
+                        listButton.add((Game.Button)gameObject));
+        return listButton;
+    }
+
 
     public void clear(){
         this.list.clear();

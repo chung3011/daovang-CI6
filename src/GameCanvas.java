@@ -4,6 +4,8 @@ import Game.*;
 import Game.ObjectsToCatch.LargeObjectGenerator;
 import Game.ObjectsToCatch.MediumObjectGenerator;
 import Game.ObjectsToCatch.SmallObjectGenerator;
+import Input.MouseInput;
+import scene.GamePlayScene;
 import scene.SceneManager;
 import scene.StartScene;
 
@@ -16,17 +18,14 @@ public class GameCanvas extends JPanel {
     private final int WIDTH = 1024;
     public final int HEIGHT = 600;
 
-    public int scene;
-
     Graphics graphics;
     BufferedImage backBuffer;
 
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
         this.setUpBackBuffer();
-
-        this.scene = 0;
 //        this.setUpCharacters();
+//        SceneManager.instance.changeScene(new GamePlayScene());
 
         SceneManager.instance.changeScene(new StartScene());
 
@@ -43,17 +42,17 @@ public class GameCanvas extends JPanel {
         this.graphics = backBuffer.getGraphics();
     }
 
-    public void setUpCharacters() {
-        GameObjectManager.instance.add(new Anchor());
-        GameObjectManager.instance.add(new Player());
-        GameObjectManager.instance.add(new Background());
-
-        GameObjectManager.instance.add(new SmallObjectGenerator());
-        GameObjectManager.instance.add(new LargeObjectGenerator());
-        GameObjectManager.instance.add(new MediumObjectGenerator());
-        GameObjectManager.instance.add(new BombGenerator());
-        GameObjectManager.instance.add(new Player());
-    }
+//    public void setUpCharacters() {
+//        GameObjectManager.instance.add(new Anchor());
+//        GameObjectManager.instance.add(new Player());
+//        GameObjectManager.instance.add(new Background());
+//
+//        GameObjectManager.instance.add(new SmallObjectGenerator());
+//        GameObjectManager.instance.add(new LargeObjectGenerator());
+//        GameObjectManager.instance.add(new MediumObjectGenerator());
+//        GameObjectManager.instance.add(new BombGenerator());
+//        GameObjectManager.instance.add(new Player());
+//    }
 
     public void startCatching() {
         Anchor anchor = GameObjectManager.instance.findAnchor();
@@ -66,6 +65,11 @@ public class GameCanvas extends JPanel {
 
     public void runAll() {
         GameObjectManager.instance.runAll();
+
+        if(MouseInput.instance.clicked){
+            MouseInput.instance.checkMouseClicked();
+            MouseInput.instance.clicked = false;
+        }
         SceneManager.instance.performChangeSceneIfNeeded();
     }
 

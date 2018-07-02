@@ -1,11 +1,8 @@
-import scene.GamePlayScene;
-import scene.SceneManager;
+import Base.Vector2D;
+import Input.MouseInput;
 
 import javax.swing.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
 
 public class GameWindow extends JFrame {
@@ -24,6 +21,7 @@ public class GameWindow extends JFrame {
     private void event() {
         this.keyboardEvent();
         this.windowEvent();
+        this.mouseEvent();
     }
 
     private void keyboardEvent() {
@@ -35,13 +33,7 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                    if (gameCanvas.scene == 0) {
-                        SceneManager.instance.changeScene(new GamePlayScene());
-                        gameCanvas.scene++;
-                    }
-                    else if (gameCanvas.scene == 1) {
-                        gameCanvas.startCatching();
-                    }
+                    gameCanvas.startCatching();
                 }
 
             }
@@ -64,6 +56,15 @@ public class GameWindow extends JFrame {
                 System.exit(1);
             }
         });
+    }
+
+
+    private void mouseEvent(){
+//        this.addMouseListener(MouseInput.instance);
+        // phải sử dụng getContentPane để lấy tọa độ 0,0 không tính phần bao của cửa sổ window
+        // lệnh getX, getY lấy tọa độ so với điểm 0,0 là phần nội dung bên trong ko tính phần bao
+        this.getContentPane().addMouseListener(MouseInput.instance);
+
     }
 
     public void gameLoop() {

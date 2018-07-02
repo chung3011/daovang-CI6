@@ -26,7 +26,7 @@ public class LargeObjectGenerator extends GameObject {
                         return true;
                     }
                 },
-                3)
+                4)
         );
     }
 

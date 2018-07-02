@@ -11,7 +11,7 @@ public class Bomb extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public Bomb() {
-        this.renderer = new ImageRenderer("resources/images/demen-pixilart.png", 26, 26);
+        this.renderer = new ImageRenderer("resources/images/con-gian-pixilart.png", 26, 26);
         this.boxCollider = new BoxCollider( 26,26 );
         this.isCaught = false;
     }

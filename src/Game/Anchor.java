@@ -10,6 +10,9 @@ import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
 import Renderer.ImageRenderer;
+import scene.GamePlayScene;
+import scene.Scene;
+import scene.SceneManager;
 
 import java.awt.*;
 
@@ -100,7 +103,8 @@ public class Anchor extends GameObject implements PhysicBody {
 
         if (this.level.isCompleted() && this.level.getLevel() == 1) {
             System.out.println("NEXT LEVEL!");
-            level.levelUp();
+            SceneManager.instance.changeScene(new GamePlayScene());
+//            level.levelUp();
         }
 
         if (this.level.isCompleted() && this.level.getLevel() == 2) {

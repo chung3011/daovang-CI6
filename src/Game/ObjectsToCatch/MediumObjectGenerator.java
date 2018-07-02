@@ -52,6 +52,7 @@ public class MediumObjectGenerator extends GameObject {
                         MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
                         mediumObject.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
                         mediumObject.boxCollider.position.set((int) mediumObject.position.x - 20, (int) mediumObject.position.y - 20);
+                        System.out.println(mediumObject.position.x + " " +  mediumObject.position.y);
                         return true;
                     }
                 },

@@ -1,5 +1,7 @@
 package scene;
 
+import java.util.List;
+
 public class SceneManager  {
     private Scene currentScene;
     private Scene nextScene;

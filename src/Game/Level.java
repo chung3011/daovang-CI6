@@ -5,7 +5,7 @@ public class Level {
     private int LEVEL_ONE_MAX_SCORE = 5;
     private int LEVEL_TWO_MAX_SCORE = 10;
 
-    public int level;
+//    public int level;
     public int currentScore;
 
     public int countSmallObjects;
@@ -14,8 +14,10 @@ public class Level {
 
     private boolean isCompleted;
 
+    public static int level;
+
     public Level() {
-        this.level = 1;
+        level += 1;
         this.currentScore = 0;
         this.reset();
     }
@@ -27,10 +29,10 @@ public class Level {
         this.countSmallObjects = 0;
     }
 
-    public void levelUp() {
-        this.level++;
-        this.reset();
-    }
+//    public void levelUp() {
+////        this.level++;
+//        this.reset();
+//    }
 
     public void addLargeObjects() {
         this.countLargeObjects++;

@@ -11,11 +11,15 @@ import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
 
+import javax.print.attribute.standard.SheetCollate;
+
 public class Anchor extends GameObject implements PhysicBody {
 
     private final int WIDTH = 20;
     private final int HEIGHT = 20;
     private final int STRING_LENGTH = 100;
+
+    public float speed;
 
     public double angle;
     public double angleAccel = 0;
@@ -25,6 +29,7 @@ public class Anchor extends GameObject implements PhysicBody {
     public boolean isDropping = false;
     public boolean isCatching = false;
     private boolean isBomb = false;
+    private boolean hasShield = false;
 
     public Vector2D playerPosition;
     public Vector2D ropeDirection;
@@ -45,19 +50,25 @@ public class Anchor extends GameObject implements PhysicBody {
                 LargeObject.class,
                 MediumObject.class,
                 SmallObject.class,
-                Bomb.class);
+                Bomb.class,
+                ShieldEffect.class,
+                SpeedEffect.class);
 
         this.angle = Math.PI / 2;
         this.level = new Level();
+        this.speed = 3;
+
     }
 
 
     public void run() {
 
         Player player = GameObjectManager.instance.findPlayer();
+
         if (player != null) {
             this.playerPosition.set(player.getPosition());
         }
+
 
         if (!isCatching) {
             this.rotateAnchor();
@@ -133,7 +144,20 @@ public class Anchor extends GameObject implements PhysicBody {
         }
 
         else if (gameObject instanceof Bomb) {
-            isBomb = true;
+            if (this.hasShield) {
+                this.hasShield = false;
+            }
+            else if (!this.hasShield) {
+                this.isBomb = true;
+            }
+        }
+
+        else if (gameObject instanceof ShieldEffect) {
+            this.hasShield = true;
+        }
+
+        else if (gameObject instanceof  SpeedEffect) {
+            this.speed = 6;
         }
     }
 

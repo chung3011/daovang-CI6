@@ -1,5 +1,6 @@
 package scene;
 
+import Base.GameObject;
 import Base.GameObjectManager;
 import Game.*;
 import Game.ObjectsToCatch.LargeObject.LargeObjectGenerator;
@@ -17,7 +18,9 @@ public class GamePlayScene implements Scene {
         GameObjectManager.instance.recycle(SmallObjectGenerator.class);
         GameObjectManager.instance.recycle(LargeObjectGenerator.class);
         GameObjectManager.instance.recycle(MediumObjectGenerator.class);
-//        GameObjectManager.instance.add(new BombGenerator());
+        GameObjectManager.instance.recycle(SpeedEffect.class);
+        GameObjectManager.instance.recycle(ShieldEffect.class);
+        GameObjectManager.instance.add(new BombGenerator());
     }
 
     @Override

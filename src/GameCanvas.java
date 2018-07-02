@@ -42,7 +42,7 @@ public class GameCanvas extends JPanel {
             anchor.isCatching = true;
             anchor.isDropping = true;
             anchor.ropeDirection.set(anchor.position);
-            anchor.movingDirection.set(anchor.position.subtract(player.getPosition()).normalize().multiply(3));
+            anchor.movingDirection.set(anchor.position.subtract(player.getPosition()).normalize().multiply(anchor.speed));
         }
     }
 

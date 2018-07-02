@@ -34,7 +34,7 @@ public class SmallObjectGenerator extends GameObject {
                         return true;
                     }
                 },
-                need + random.nextInt(2))
+                need + random.nextInt(3)+1)
         );
     }
     @Override

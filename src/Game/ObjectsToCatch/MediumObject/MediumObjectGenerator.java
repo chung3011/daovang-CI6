@@ -31,7 +31,7 @@ public class MediumObjectGenerator extends GameObject {
                         return true;
                     }
                 },
-                need + random.nextInt(2))
+                need + random.nextInt(3)+1)
         );
     }
 

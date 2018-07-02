@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c17f4ed-1dae-4e18-8f34-35cbae0a1ee6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/leaf.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/pressspacetostart-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/GameOverScene.java" afterPath="$PROJECT_DIR$/src/scene/GameOverScene.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/GamePlayScene.java" afterPath="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530543847709</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix bugs with bombs">
+      <created>1530546129824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530546129824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">

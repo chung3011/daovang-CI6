@@ -4,11 +4,14 @@ import Action.ActionAdapter;
 import Action.LimitAction;
 import Base.GameObject;
 import Base.GameObjectManager;
+import Constant.Constant;
+import Game.Level;
 
 import java.util.Random;
 
 public class MediumObjectGenerator extends GameObject {
     private Random random;
+    private int need;
 
     public MediumObjectGenerator() {
         this.random = new Random();
@@ -16,31 +19,8 @@ public class MediumObjectGenerator extends GameObject {
     }
 
     public void createAction() {
-//        this.addAction(
-//                new SequenceAction(
-//                        new ActionAdapter() {
-//
-//                            private List<MediumObject> list = new ArrayList<>();
-//                            private int count = 0;
-//
-//                            @Override
-//                            public boolean run(GameObject owner) {
-//                                if (list.isEmpty()) {
-//                                    MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
-//                                    mediumObject.position.set(30 + random.nextInt(950),150 +  random.nextInt(200));
-//                                    this.count += 1;
-//                                    list.add(mediumObject);
-//                                }
-//
-//                                list.removeIf(mediumObject -> !mediumObject.isAlive);
-//
-//                                return this.count == 5;
-//                            }
-//                        },
-//                        new WaitAction(300)
-//                )
-//        );
-
+        if (Level.level == 1) need = Constant.Level.mediumLv1;
+        if (Level.level == 2) need = Constant.Level.mediumLv2;
         this.addAction(new LimitAction(
                 new ActionAdapter() {
                     @Override
@@ -51,7 +31,7 @@ public class MediumObjectGenerator extends GameObject {
                         return true;
                     }
                 },
-                4)
+                need + random.nextInt(2))
         );
     }
 

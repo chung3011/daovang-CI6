@@ -2,6 +2,7 @@ package Game;
 
 import Action.WaitAction;
 import Base.FrameCounter;
+import Constant.Constant;
 import scene.GamePlayScene;
 import scene.SceneManager;
 
@@ -49,8 +50,7 @@ public class Level {
 
     public void isCompleted() {
         if (level == 1) {
-            if (countLargeObjects >= 2 && countMediumObjects >= 2 && countSmallObjects >= 1) {
-//            if (countLargeObjects >= 1 || countSmallObjects >= 1 || countMediumObjects >= 1) {
+            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
                 this.isCompleted = true;
                 while(!frameCounter.run()) {
 
@@ -63,7 +63,7 @@ public class Level {
         }
 
         else if (level == 2) {
-            if (countLargeObjects >= 4 && countMediumObjects >= 3 && countSmallObjects >= 3 ) {
+            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 && countSmallObjects >= Constant.Level.smallLv2 ) {
                 this.isCompleted  = true;
                 System.out.println("YOU WIN!");
                 System.exit(1);

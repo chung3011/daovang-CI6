@@ -5,12 +5,15 @@ import Action.LimitAction;
 import Base.FrameCounter;
 import Base.GameObject;
 import Base.GameObjectManager;
+import Constant.Constant;
+import Game.Level;
 
 import java.util.Random;
 
 public class SmallObjectGenerator extends GameObject {
     private FrameCounter frameCounter;
     private Random random;
+    private int need;
 
     public SmallObjectGenerator() {
         this.random = new Random();
@@ -18,6 +21,10 @@ public class SmallObjectGenerator extends GameObject {
     }
 
     public void createAction() {
+
+        if (Level.level == 1) need = Constant.Level.smallLv1;
+        if (Level.level == 2) need = Constant.Level.smallLv2;
+
         this.addAction(new LimitAction(
                 new ActionAdapter() {
                     @Override
@@ -27,7 +34,7 @@ public class SmallObjectGenerator extends GameObject {
                         return true;
                     }
                 },
-                5)
+                need + random.nextInt(2))
         );
     }
     @Override

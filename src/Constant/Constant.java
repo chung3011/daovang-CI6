@@ -1,8 +1,5 @@
 package Constant;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Constant {
 
     public static class Window {
@@ -15,14 +12,10 @@ public class Constant {
         public static final int HEIGHT = 660;
     }
 
-
-
     public static class Player {
         public static final int WIDTH = 60;
         public static final int HEIGHT = 40;
     }
-
-
 
 
     public static class Button {
@@ -37,6 +30,17 @@ public class Constant {
 
     public static class Icon {
         public static final int HORIZONTALPOSITION = 15;
+    }
+
+    public static class Level {
+
+        public static final int smallLv1 = 1;
+        public static final int mediumLv1 = 1;
+        public static final int largeLv1 = 3;
+
+        public static final int smallLv2 = 3;
+        public static final int mediumLv2 = 3;
+        public static final int largeLv2 = 4;
     }
 
 }

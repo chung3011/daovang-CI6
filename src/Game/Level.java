@@ -57,6 +57,7 @@ public class Level {
                 }
                 frameCounter.reset();
                 System.out.println("level up!");
+                IconGenerator.instance.resetVerticalPos();
                 SceneManager.instance.changeScene(new GamePlayScene());
             }
         }

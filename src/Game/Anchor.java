@@ -4,7 +4,6 @@ import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
-import Game.ObjectsToCatch.*;
 import Game.ObjectsToCatch.LargeObject.LargeObject;
 import Game.ObjectsToCatch.MediumObject.MediumObject;
 import Game.ObjectsToCatch.SmallObject.SmallObject;

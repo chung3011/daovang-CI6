@@ -1,4 +1,4 @@
-package Game.ObjectsToCatch;
+package Game;
 
 public class MovingObject {
 }

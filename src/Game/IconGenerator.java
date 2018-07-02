@@ -1,4 +1,4 @@
-package Game.ObjectsToCatch;
+package Game;
 
 import Constant.Constant;
 import Game.ObjectsToCatch.LargeObject.LargeObjectIcon;
@@ -36,6 +36,10 @@ public class IconGenerator {
         smallObjectIcon.position.set(verticalPos, horizonPos);
         this.changeHorizontalPos();
         return smallObjectIcon;
+    }
+
+    public void resetVerticalPos() {
+        this.verticalPos = 20;
     }
 
     private void changeHorizontalPos() {

@@ -38,10 +38,12 @@ public class GameCanvas extends JPanel {
     public void startCatching() {
         Anchor anchor = GameObjectManager.instance.findAnchor();
         Player player = GameObjectManager.instance.findPlayer();
-        anchor.isCatching = true;
-        anchor.isDropping = true;
-        anchor.ropeDirection.set(anchor.position);
-        anchor.movingDirection.set(anchor.position.subtract(player.getPosition()).normalize().multiply(3));
+        if (!anchor.isCatching) {
+            anchor.isCatching = true;
+            anchor.isDropping = true;
+            anchor.ropeDirection.set(anchor.position);
+            anchor.movingDirection.set(anchor.position.subtract(player.getPosition()).normalize().multiply(3));
+        }
     }
 
     public void runAll() {

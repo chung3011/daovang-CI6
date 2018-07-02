@@ -2,6 +2,7 @@ package Game;
 
 import Action.WaitAction;
 import Base.FrameCounter;
+import Game.ObjectsToCatch.IconGenerator;
 import scene.GamePlayScene;
 import scene.SceneManager;
 
@@ -56,6 +57,7 @@ public class Level {
 
                 }
                 frameCounter.reset();
+                IconGenerator.instance.resetVerticalPos();
                 System.out.println("level up!");
                 SceneManager.instance.changeScene(new GamePlayScene());
             }

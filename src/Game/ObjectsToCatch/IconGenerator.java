@@ -41,4 +41,8 @@ public class IconGenerator {
     private void changeHorizontalPos() {
         this.verticalPos += 25;
     }
+
+    public void resetVerticalPos() {
+        verticalPos = 20;
+    }
 }

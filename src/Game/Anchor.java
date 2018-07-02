@@ -14,6 +14,9 @@ import Game.ObjectsToCatch.SmallObject.SmallObject;
 import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
+import scene.GameOverScene;
+import scene.IntroScene;
+import scene.SceneManager;
 
 public class Anchor extends GameObject implements PhysicBody {
 
@@ -116,10 +119,7 @@ public class Anchor extends GameObject implements PhysicBody {
                 isCatching = false;
                 if (isBomb) {
                     System.out.println("GAME OVER");
-                    System.exit(1);
-                }
-                if (this.speed == 1.5f) {
-                    this.speed = 3f;
+                    SceneManager.instance.changeScene(new GameOverScene());
                 }
 
             }

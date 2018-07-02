@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f26633df-9c1f-4957-b790-0f7ca8cbc211" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Base/GameObjectManager.java" afterPath="$PROJECT_DIR$/src/Base/GameObjectManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/Constant/Constant.java" afterPath="$PROJECT_DIR$/src/Constant/Constant.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Bomb.java" afterPath="$PROJECT_DIR$/src/Game/Bomb.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Level.java" afterPath="$PROJECT_DIR$/src/Game/Level.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" afterPath="$PROJECT_DIR$/src/GameCanvas.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/GamePlayScene.java" afterPath="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/SceneManager.java" afterPath="$PROJECT_DIR$/src/scene/SceneManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bomb.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bomb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Bomb.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -61,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MouseInput.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MouseInput.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Input/MouseInput.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -468,11 +456,19 @@
       <option name="project" value="LOCAL" />
       <updated>1530460866139</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add game play scene">
+      <created>1530506617045</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530506617045</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1426" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -483,7 +479,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -935,22 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input/MouseInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input/ClickButtonReact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Constant/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -979,6 +959,22 @@
             <element signature="e#1066#1067#0" expanded="true" />
             <element signature="e#1105#1106#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Input/ClickButtonReact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Input/MouseInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

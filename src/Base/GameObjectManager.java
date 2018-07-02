@@ -48,7 +48,7 @@ public class GameObjectManager {
             graphics.setColor(Color.WHITE);
 
             if (!anchor.isCatching) {
-                graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y,
+                graphics.drawLine( (int) player.getPosition().x, (int) player.getPosition().y ,
                         (int) anchor.position.x, (int) anchor.position.y);
             }
             else if (anchor.isCatching) {

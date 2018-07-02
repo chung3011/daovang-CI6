@@ -473,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530546129824</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add leaves">
+      <created>1530546139581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530546139581</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +550,8 @@
     <MESSAGE value="fix bugs w space bar" />
     <MESSAGE value="reorganize codes" />
     <MESSAGE value="fix bugs with bombs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs with bombs" />
+    <MESSAGE value="add leaves" />
+    <option name="LAST_COMMIT_MESSAGE" value="add leaves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

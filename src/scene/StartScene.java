@@ -24,7 +24,7 @@ public class StartScene implements Scene {
                 80,
                 Constant.Button.START,"resources/images/temp_start.png"); // "Start Button"
 
-        GameObjectManager.instance.add(new Background());
+//        GameObjectManager.instance.add(new Background());
         GameObjectManager.instance.add(intro);
         GameObjectManager.instance.add(startButton);
     }
@@ -32,5 +32,6 @@ public class StartScene implements Scene {
     @Override
     public void deinit() {
         GameObjectManager.instance.clear();
+        System.out.println("start scene cleared");
     }
 }

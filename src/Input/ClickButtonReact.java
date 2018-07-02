@@ -11,7 +11,7 @@ public class ClickButtonReact {
         if(labelButton.equals(Constant.Button.START))
         {
             SceneManager.instance.changeScene(new GamePlayScene());
-            System.out.println("start");
+//            System.out.println("start");
         }
 
 

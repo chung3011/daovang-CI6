@@ -24,9 +24,6 @@ public class GameCanvas extends JPanel {
     public GameCanvas() {
         this.setSize(WIDTH,HEIGHT);
         this.setUpBackBuffer();
-//        this.setUpCharacters();
-//        SceneManager.instance.changeScene(new GamePlayScene());
-
         SceneManager.instance.changeScene(new StartScene());
 
         this.setVisible(true);
@@ -41,18 +38,6 @@ public class GameCanvas extends JPanel {
         this.backBuffer = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB);
         this.graphics = backBuffer.getGraphics();
     }
-
-//    public void setUpCharacters() {
-//        GameObjectManager.instance.add(new Anchor());
-//        GameObjectManager.instance.add(new Player());
-//        GameObjectManager.instance.add(new Background());
-//
-//        GameObjectManager.instance.add(new SmallObjectGenerator());
-//        GameObjectManager.instance.add(new LargeObjectGenerator());
-//        GameObjectManager.instance.add(new MediumObjectGenerator());
-//        GameObjectManager.instance.add(new BombGenerator());
-//        GameObjectManager.instance.add(new Player());
-//    }
 
     public void startCatching() {
         Anchor anchor = GameObjectManager.instance.findAnchor();

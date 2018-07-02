@@ -3,6 +3,7 @@ package Game;
 import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
+import Constant.Constant;
 import Game.ObjectsToCatch.LargeObject;
 import Game.ObjectsToCatch.MediumObject;
 import Game.ObjectsToCatch.SmallObject;
@@ -17,9 +18,6 @@ import scene.SceneManager;
 import java.awt.*;
 
 public class Anchor extends GameObject implements PhysicBody {
-
-    private final int WINDOW_WIDTH = 1024;
-    private final int WINDOW_HEIGHT = 600;
 
     private final int WIDTH = 20;
     private final int HEIGHT = 20;
@@ -44,7 +42,6 @@ public class Anchor extends GameObject implements PhysicBody {
     public Level level;
 
     public Anchor() {
-        this.renderer = new ImageRenderer("resources/images/anchor.png", WIDTH,HEIGHT);
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(WIDTH,HEIGHT);
         this.playerPosition = new Vector2D();
@@ -62,54 +59,22 @@ public class Anchor extends GameObject implements PhysicBody {
 
 
     public void run() {
+
         Player player = GameObjectManager.instance.findPlayer();
         if (player != null) {
             this.playerPosition.set(player.getPosition());
         }
 
         if (!isCatching) {
-            this.angleAccel = -9.81 / STRING_LENGTH * Math.sin(this.angle );
-            this.angleVelocity += this.angleAccel * dt;
-            this.angle += this.angleVelocity * dt;
-            this.position.set(this.playerPosition.x + (int) (Math.sin(this.angle) * STRING_LENGTH),
-                    this.playerPosition.y + (int) (Math.cos(this.angle) * STRING_LENGTH));
+            this.rotateAnchor();
+            this.level.isCompleted();
         }
 
         if (isCatching) {
-            if (ropeDirection.x > WINDOW_WIDTH - 10 || ropeDirection.y > WINDOW_HEIGHT -10 || ropeDirection.x < 0) {
-                isDropping = false;
-            }
-
-            if (isDropping) {
-                ropeDirection.addUp(movingDirection);
-                runHitObject.run(this);
-            }
-
-            if (!isDropping) {
-                if (ropeDirection.subtract(playerPosition).length() <= 10) {
-                    isCatching = false;
-                    if (isBomb) {
-                        System.out.println("GAME OVER");
-                        System.exit(1);
-                    }
-
-                }
-                else ropeDirection.subtractBy(movingDirection);
-            }
-            this.position.set(ropeDirection);
-
-        }
-        boxCollider.position.set( (int) this.position.x - 10, (int) this.position.y - 10 );
-
-        if (this.level.isCompleted() && this.level.getLevel() == 1) {
-            System.out.println("NEXT LEVEL!");
-            SceneManager.instance.changeScene(new GamePlayScene());
-//            level.levelUp();
+            this.setCatching();
         }
 
-        if (this.level.isCompleted() && this.level.getLevel() == 2) {
-            System.out.println("YOU WIN!");
-        }
+        this.boxCollider.position.set( (int) this.position.x - 10, (int) this.position.y - 10 );
     }
 
 
@@ -118,11 +83,39 @@ public class Anchor extends GameObject implements PhysicBody {
         return this.boxCollider;
     }
 
-//    @Override
-//    public void render(Graphics graphics) {
-//
-//    }
 
+    private void rotateAnchor() {
+        this.angleAccel = -9.81 / STRING_LENGTH * Math.sin(this.angle );
+        this.angleVelocity += this.angleAccel * dt;
+        this.angle += this.angleVelocity * dt;
+        this.position.set(this.playerPosition.x + (int) (Math.sin(this.angle) * STRING_LENGTH),
+                this.playerPosition.y + (int) (Math.cos(this.angle) * STRING_LENGTH));
+    }
+
+    private void setCatching() {
+        if (ropeDirection.x > Constant.Window.WIDTH - 10 ||
+                ropeDirection.y > Constant.Window.HEIGHT -10 || ropeDirection.x < 0) {
+            isDropping = false;
+        }
+
+        if (isDropping) {
+            ropeDirection.addUp(movingDirection);
+            runHitObject.run(this);
+        }
+
+        if (!isDropping) {
+            if (ropeDirection.subtract(playerPosition).length() <= 10) {
+                isCatching = false;
+                if (isBomb) {
+                    System.out.println("GAME OVER");
+                    System.exit(1);
+                }
+
+            }
+            else ropeDirection.subtractBy(movingDirection);
+        }
+        this.position.set(ropeDirection);
+    }
 
     @Override
     public void getHit(GameObject gameObject) {

@@ -22,7 +22,7 @@ public class LargeObjectGenerator extends GameObject {
                         LargeObject largeObject = GameObjectManager.instance.recycle(LargeObject.class);
                         largeObject.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
                         largeObject.boxCollider.position.set((int) largeObject.position.x - 20, (int) largeObject.position.y - 20);
-                        System.out.println(largeObject.position.x + " " + largeObject.position.y);
+//                        System.out.println(largeObject.position.x + " " + largeObject.position.y);
                         return true;
                     }
                 },

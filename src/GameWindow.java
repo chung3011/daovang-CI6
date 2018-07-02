@@ -1,5 +1,8 @@
 import Base.Vector2D;
+import Constant.Constant;
 import Input.MouseInput;
+import scene.GamePlayScene;
+import scene.SceneManager;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -11,7 +14,7 @@ public class GameWindow extends JFrame {
     long lastTime = 0;
 
     public GameWindow() {
-        this.setSize(1024, 600);
+        this.setSize(Constant.Window.WIDTH, Constant.Window.HEIGHT);
         this.gameCanvas = new GameCanvas();
         this.add(this.gameCanvas);
         this.event();
@@ -33,7 +36,9 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                    gameCanvas.startCatching();
+                    if (SceneManager.instance.getCurrentScene() instanceof GamePlayScene) {
+                        gameCanvas.startCatching();
+                    }
                 }
 
             }

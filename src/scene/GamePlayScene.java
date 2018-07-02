@@ -1,5 +1,6 @@
 package scene;
 
+import Base.GameObject;
 import Base.GameObjectManager;
 import Game.*;
 import Game.ObjectsToCatch.LargeObjectGenerator;
@@ -11,18 +12,18 @@ public class GamePlayScene implements Scene {
 
     public void setUpCharacters() {
 
-        GameObjectManager.instance.add(new Anchor());
-        GameObjectManager.instance.add(new Player());
-        GameObjectManager.instance.add(new Background());
+        GameObjectManager.instance.recycle(Anchor.class);
+        GameObjectManager.instance.recycle(Player.class);
 
-        GameObjectManager.instance.add(new SmallObjectGenerator());
-        GameObjectManager.instance.add(new LargeObjectGenerator());
-        GameObjectManager.instance.add(new MediumObjectGenerator());
+        GameObjectManager.instance.recycle(SmallObjectGenerator.class);
+        GameObjectManager.instance.recycle(LargeObjectGenerator.class);
+        GameObjectManager.instance.recycle(MediumObjectGenerator.class);
 //        GameObjectManager.instance.add(new BombGenerator());
-        GameObjectManager.instance.add(new Player());
     }
+
     @Override
     public void init() {
+        GameObjectManager.instance.recycle(Background.class);
         this.setUpCharacters();
     }
 

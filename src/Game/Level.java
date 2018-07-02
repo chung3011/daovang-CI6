@@ -1,16 +1,21 @@
 package Game;
 
+import Action.WaitAction;
+import Base.FrameCounter;
+import scene.GamePlayScene;
+import scene.SceneManager;
+
 public class Level {
 
     private int LEVEL_ONE_MAX_SCORE = 5;
     private int LEVEL_TWO_MAX_SCORE = 10;
 
-//    public int level;
-    public int currentScore;
-
     public int countSmallObjects;
     public int countLargeObjects;
     public int countMediumObjects;
+
+    private FrameCounter frameCounter = new FrameCounter(30);
+
 
     private boolean isCompleted;
 
@@ -18,7 +23,6 @@ public class Level {
 
     public Level() {
         level += 1;
-        this.currentScore = 0;
         this.reset();
     }
 
@@ -29,10 +33,6 @@ public class Level {
         this.countSmallObjects = 0;
     }
 
-//    public void levelUp() {
-////        this.level++;
-//        this.reset();
-//    }
 
     public void addLargeObjects() {
         this.countLargeObjects++;
@@ -47,27 +47,32 @@ public class Level {
         this.countSmallObjects++;
     }
 
-    public boolean isCompleted() {
+    public void isCompleted() {
         if (level == 1) {
             if (countLargeObjects >= 2 && countMediumObjects >= 2 && countSmallObjects >= 1) {
+//            if (countLargeObjects >= 1 || countSmallObjects >= 1 || countMediumObjects >= 1) {
                 this.isCompleted = true;
+                while(!frameCounter.run()) {
+
+                }
+                frameCounter.reset();
+                System.out.println("level up!");
+                SceneManager.instance.changeScene(new GamePlayScene());
             }
         }
 
         else if (level == 2) {
             if (countLargeObjects >= 4 && countMediumObjects >= 3 && countSmallObjects >= 3 ) {
                 this.isCompleted  = true;
+                System.out.println("YOU WIN!");
+                System.exit(1);
             }
         }
 
-        return this.isCompleted;
     }
 
     public int getLevel() {
         return level;
     }
 
-    public int getCurrentScore() {
-        return currentScore;
-    }
 }

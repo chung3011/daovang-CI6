@@ -8,6 +8,7 @@ import Game.Bomb.Bomb;
 import Game.Effect.ShieldEffect;
 import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObject;
+import Game.ObjectsToCatch.Leaves;
 import Game.ObjectsToCatch.MediumObject.MediumObject;
 import Game.ObjectsToCatch.SmallObject.SmallObject;
 import Physic.PhysicBody;
@@ -53,7 +54,8 @@ public class Anchor extends GameObject implements PhysicBody {
                 SmallObject.class,
                 Bomb.class,
                 ShieldEffect.class,
-                SpeedEffect.class);
+                SpeedEffect.class,
+                Leaves.class);
 
         this.angle = Math.PI / 2;
         this.level = new Level();
@@ -116,6 +118,9 @@ public class Anchor extends GameObject implements PhysicBody {
                     System.out.println("GAME OVER");
                     System.exit(1);
                 }
+                if (this.speed == 1.5f) {
+                    this.speed = 3f;
+                }
 
             }
             else ropeDirection.subtractBy(movingDirection);
@@ -158,7 +163,11 @@ public class Anchor extends GameObject implements PhysicBody {
         }
 
         else if (gameObject instanceof  SpeedEffect) {
-            this.speed = 6;
+            this.speed = 8;
+        }
+
+        else if (gameObject instanceof Leaves) {
+            this.movingDirection.multiply(1.0f/4.0f);
         }
     }
 

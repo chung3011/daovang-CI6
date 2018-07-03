@@ -39,7 +39,7 @@ public class BombGenerator extends GameObject {
         }
 
 
-        if (Level.level == 2) {
+        if (Level.level == 2 || Level.level == 3) {
             this.addAction(new RepeatActionForever(new SequenceAction(
                     new ActionAdapter() {
                         @Override

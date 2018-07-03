@@ -61,11 +61,14 @@ public class GameWindow extends JFrame {
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelThreeScene) {
                         SceneManager.instance.changeScene(new GamePlayScene());
                     }
-                    else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene) {
+                    else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene ||
+                            SceneManager.instance.getCurrentScene() instanceof WinningScene) {
                         Level.level = 0;
                         IconGenerator.instance.resetVerticalPos();
                         SceneManager.instance.changeScene(new StartScene());
                     }
+
+
                 }
 
             }

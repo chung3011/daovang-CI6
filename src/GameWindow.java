@@ -1,5 +1,6 @@
 import Base.Vector2D;
 import Constant.Constant;
+import Game.Background.GameOverAnNhieu;
 import Game.IconGenerator;
 import Game.Level;
 import scene.*;
@@ -62,7 +63,8 @@ public class GameWindow extends JFrame {
                         SceneManager.instance.changeScene(new GamePlayScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene ||
-                            SceneManager.instance.getCurrentScene() instanceof WinningScene) {
+                            SceneManager.instance.getCurrentScene() instanceof WinningScene
+                            || SceneManager.instance.getCurrentScene() instanceof GameOverAnNhieu) {
                         Level.level = 0;
                         IconGenerator.instance.resetVerticalPos();
                         SceneManager.instance.changeScene(new StartScene());

@@ -12,7 +12,7 @@ public class LargeObjectIcon extends GameObject {
 
 
     public LargeObjectIcon() {
-        this.renderer = new ImageRenderer("resources/images/Objects/borua-pixilart (1).png", 20, 20);
+        this.renderer = new ImageRenderer("resources/images/Objects/boruavientranga-pixilart.png", 20, 20);
         this.position = new Vector2D();
     }
 

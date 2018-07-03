@@ -4,6 +4,7 @@ import Base.GameObjectManager;
 import Game.*;
 import Game.Background.Background;
 import Game.Bomb.BombGenerator;
+import Game.Cockcroach.CockcroachGenerator;
 import Game.Effect.ShieldEffect;
 import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObjectGenerator;
@@ -29,6 +30,7 @@ public class GamePlayScene implements Scene {
         GameObjectManager.instance.recycle(ShieldEffect.class);
         GameObjectManager.instance.add(new BombGenerator());
         GameObjectManager.instance.add(new LeavesGenerator());
+        GameObjectManager.instance.add(new CockcroachGenerator());
         System.out.println(Level.level);
     }
 

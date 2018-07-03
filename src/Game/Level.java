@@ -74,7 +74,7 @@ public class Level {
 
             if (sum > 7) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverScene());
+                SceneManager.instance.changeScene(new GameOverAnNhieu());
             }
         }
 
@@ -89,7 +89,7 @@ public class Level {
 
             if (sum > 15) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverScene());
+                SceneManager.instance.changeScene(new GameOverAnNhieu());
             }
         }
 
@@ -104,7 +104,7 @@ public class Level {
 
             if (sum > 15) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverScene());
+                SceneManager.instance.changeScene(new GameOverAnNhieu());
             }
         }
 

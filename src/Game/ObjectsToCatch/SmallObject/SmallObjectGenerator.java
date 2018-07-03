@@ -9,7 +9,7 @@ import Game.Level;
 
 public class SmallObjectGenerator extends GameObject {
     private Vector2D[] posLevel1 = { new Vector2D(600,500)};
-    private Vector2D[] posLevel2 = { new Vector2D(300, 280), new Vector2D(450, 150),
+    private Vector2D[] posLevel2 = { new Vector2D(300, 280), new Vector2D(450, 190),
                                     new Vector2D(630, 350), new Vector2D(700, 150)};
 
     private Vector2D[] posLevel3 = { new Vector2D(80, 150), new Vector2D(85, 360),

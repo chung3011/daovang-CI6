@@ -5,6 +5,7 @@ import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
 import Game.Bomb.Bomb;
+import Game.Cockcroach.Cockcroach;
 import Game.Effect.ShieldEffect;
 import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObject;
@@ -65,7 +66,8 @@ public class Anchor extends GameObject implements PhysicBody {
                 Bomb.class,
                 ShieldEffect.class,
                 SpeedEffect.class,
-                Leaves.class);
+                Leaves.class,
+                Cockcroach.class);
 
         this.angle = Math.PI / 2;
         this.level = new Level();
@@ -221,7 +223,7 @@ public class Anchor extends GameObject implements PhysicBody {
             this.catchSound.start();
 
             this.hasShield = true;
-            GameObjectManager.instance.add(IconGenerator.instance.addShieldIcon());
+//            GameObjectManager.instance.add(IconGenerator.instance.addShieldIcon());
         }
 
         else if (gameObject instanceof  SpeedEffect) {
@@ -230,7 +232,7 @@ public class Anchor extends GameObject implements PhysicBody {
             this.catchSound.start();
 
             this.speed = 8;
-            GameObjectManager.instance.add(IconGenerator.instance.addSpeedIcon());
+//            GameObjectManager.instance.add(IconGenerator.instance.addSpeedIcon());
         }
 
         else if (gameObject instanceof Leaves) {
@@ -240,6 +242,13 @@ public class Anchor extends GameObject implements PhysicBody {
             this.movingDirection.multiply(1.0f/4.0f);
             level.addLeaf();
             GameObjectManager.instance.add(IconGenerator.instance.addLeaf());
+        }
+
+        else if (gameObject instanceof Cockcroach) {
+            this.catchSound.loop(0);
+            this.catchSound.start();
+            this.isBomb = true;
+
         }
     }
 

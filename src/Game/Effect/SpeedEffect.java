@@ -20,7 +20,7 @@ public class SpeedEffect extends GameObject implements PhysicBody {
         this.isCaught = false;
         if (Level.level == 1) {
 //            this.isAlive = false;
-            this.position.set(600, 150);
+            this.position.set(600, 200);
 
         }
         else if (Level.level == 2) {

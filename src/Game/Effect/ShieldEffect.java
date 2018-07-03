@@ -17,9 +17,9 @@ public class ShieldEffect extends GameObject implements PhysicBody {
         this.boxCollider = new BoxCollider( 50,50 );
         this.isCaught = false;
         if (Level.level == 1) {
-//            this.isAlive = false;
+            this.isAlive = false;
 
-            this.position.set(600, 200);
+//            this.position.set(600, 200);
         }
         if (Level.level == 2) {
             this.position.set(900, 320);

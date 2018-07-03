@@ -4,13 +4,13 @@ import Base.Vector2D;
 
 import java.awt.*;
 
-public class IntroBackGroundRenderer implements Renderer{
+public class WhiteBackgroundRenderer implements Renderer{
 
     private int width;
     private int height;
     private Color color;
 
-    public IntroBackGroundRenderer(int width, int height, Color color) {
+    public WhiteBackgroundRenderer(int width, int height, Color color) {
         this.width = width;
         this.height = height;
         this.color = color;

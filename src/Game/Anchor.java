@@ -19,8 +19,8 @@ import scene.SceneManager;
 
 public class Anchor extends GameObject implements PhysicBody {
 
-    private final int WIDTH = 20;
-    private final int HEIGHT = 20;
+    private final int WIDTH = 10;
+    private final int HEIGHT = 10;
     private final int STRING_LENGTH = 100;
 
     public float speed;

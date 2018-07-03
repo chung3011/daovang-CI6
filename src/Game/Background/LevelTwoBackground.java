@@ -9,6 +9,5 @@ public class LevelTwoBackground extends GameObject {
         this.renderer = new BackgroundRenderer("resources/images/LevelTwo/dieukienthang2bandasuaxong-pixilart.png",
                 Constant.Window.WIDTH,
                 Constant.Window.HEIGHT);
-        System.out.println("level 2 background");
     }
 }

@@ -1,16 +1,13 @@
 package scene;
 
 import Base.GameObjectManager;
-import Base.Vector2D;
-import Constant.Constant;
 import Game.Background.LevelOneBackground;
-import Game.Button;
-import Game.Background.IntroBackGround;
+import Game.Background.WhiteBackground;
 
 public class LevelOneScene implements Scene {
     @Override
     public void init() {
-
+        GameObjectManager.instance.recycle(WhiteBackground.class);
         GameObjectManager.instance.recycle(LevelOneBackground.class);
     }
 

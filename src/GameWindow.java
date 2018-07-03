@@ -64,7 +64,7 @@ public class GameWindow extends JFrame {
                     else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene) {
                         Level.level = 0;
                         IconGenerator.instance.resetVerticalPos();
-                        SceneManager.instance.changeScene(new LevelOneScene());
+                        SceneManager.instance.changeScene(new StartScene());
                     }
                 }
 

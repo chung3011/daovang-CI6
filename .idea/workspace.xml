@@ -2,55 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c17f4ed-1dae-4e18-8f34-35cbae0a1ee6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/LevelOne/dieukienthang1bandasuaxong-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/LevelTwo/dieukienthang2bandasuaxong-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/lado'-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/presspacetocontinue-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/CharactersBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/GameOverBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/LevelOneBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/LevelThreeBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/StartGameBackground.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Effect/ShieldEffectIcon.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Effect/SpeedEffectIcon.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/scene/IntroScene.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/scene/LevelThreeScene.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/WinningBackground.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/IconGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/IconGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Constant/Constant$Level.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Constant/Constant$Level.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" />
-      <change beforePath="$PROJECT_DIR$/resources/images/LevelOne/dieu-kien-thang-1-pixilart.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/images/LevelTwo/dieu-kien-thang-2-pixilart (1).png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/images/Objects/leaf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Player.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Player.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Renderer/IntroBackGroundRenderer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" />
       <change beforePath="$PROJECT_DIR$/src/Constant/Constant.java" afterPath="$PROJECT_DIR$/src/Constant/Constant.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java" afterPath="$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/IconGenerator.java" afterPath="$PROJECT_DIR$/src/Game/IconGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Background/IntroBackGround.java" afterPath="$PROJECT_DIR$/src/Game/Background/WhiteBackground.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java" afterPath="$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/Level.java" afterPath="$PROJECT_DIR$/src/Game/Level.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/Leaves.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/Leaves.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Player.java" afterPath="$PROJECT_DIR$/src/Game/Player.java" />
       <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change beforePath="$PROJECT_DIR$/src/Renderer/IntroBackGroundRenderer.java" afterPath="$PROJECT_DIR$/src/Renderer/WhiteBackgroundRenderer.java" />
       <change beforePath="$PROJECT_DIR$/src/scene/GameOverScene.java" afterPath="$PROJECT_DIR$/src/scene/GameOverScene.java" />
+      <change beforePath="$PROJECT_DIR$/src/scene/GamePlayScene.java" afterPath="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
+      <change beforePath="$PROJECT_DIR$/src/scene/IntroScene.java" afterPath="$PROJECT_DIR$/src/scene/IntroScene.java" />
       <change beforePath="$PROJECT_DIR$/src/scene/LevelOneScene.java" afterPath="$PROJECT_DIR$/src/scene/LevelOneScene.java" />
+      <change beforePath="$PROJECT_DIR$/src/scene/LevelThreeScene.java" afterPath="$PROJECT_DIR$/src/scene/LevelThreeScene.java" />
       <change beforePath="$PROJECT_DIR$/src/scene/LevelTwoScene.java" afterPath="$PROJECT_DIR$/src/scene/LevelTwoScene.java" />
       <change beforePath="$PROJECT_DIR$/src/scene/StartScene.java" afterPath="$PROJECT_DIR$/src/scene/StartScene.java" />
+      <change beforePath="$PROJECT_DIR$/src/scene/WinningScene.java" afterPath="$PROJECT_DIR$/src/scene/WinningScene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,34 +36,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Anchor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
+      <file leaf-file-name="IntroScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/IntroScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+            <state relative-caret-position="90">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BombGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LevelTwoScene.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LevelTwoScene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scene/LevelTwoScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelThreeScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/LevelThreeScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelThreeBackground.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelThreeBackground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="100" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinningBackground.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Game/Background/WinningBackground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelTwoBackground.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="113" lean-forward="false" selection-start-line="8" selection-start-column="113" selection-end-line="8" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovingObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/MovingObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,60 +113,22 @@
       <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="86" column="62" lean-forward="false" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
               <folding>
-                <element signature="e#2634#2635#0" expanded="true" />
-                <element signature="e#2667#2668#0" expanded="true" />
+                <element signature="e#3162#3163#0" expanded="true" />
+                <element signature="e#3195#3196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LargeObjectIcon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java">
+      <file leaf-file-name="StartScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LargeObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-              <folding>
-                <element signature="e#859#922#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmallObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeavesGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1080#1081#0" expanded="true" />
-                <element signature="e#3209#3210#0" expanded="true" />
-                <element signature="e#3236#3237#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -158,21 +136,11 @@
       <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            <state relative-caret-position="222">
+              <caret line="55" column="78" lean-forward="false" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -197,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SpeedEffect.java" />
-        <option value="$PROJECT_DIR$/src/Game/SpeedEffect.java" />
         <option value="$PROJECT_DIR$/src/Game/ShieldEffect.java" />
         <option value="$PROJECT_DIR$/src/Base/GameObjectManager.java" />
         <option value="$PROJECT_DIR$/src/Game/Background.java" />
@@ -209,11 +175,8 @@
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObject.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectIcon.java" />
         <option value="$PROJECT_DIR$/src/Game/Leaves.java" />
-        <option value="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves.java" />
-        <option value="$PROJECT_DIR$/src/scene/WinningScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/IntroBackGround.java" />
-        <option value="$PROJECT_DIR$/src/Game/Player.java" />
         <option value="$PROJECT_DIR$/src/Game/Bomb/Bomb.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" />
         <option value="$PROJECT_DIR$/src/Utils/Utils.java" />
@@ -226,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/Game/Effect/SpeedEffectIcon.java" />
         <option value="$PROJECT_DIR$/src/Game/Effect/ShieldEffectIcon.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/CharactersBackground.java" />
-        <option value="$PROJECT_DIR$/src/scene/StartScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/LevelOneBackground.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java" />
@@ -234,27 +196,32 @@
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/GameOverBackground.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/StartGameBackground.java" />
-        <option value="$PROJECT_DIR$/src/scene/GameOverScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
         <option value="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/LevelThreeBackground.java" />
-        <option value="$PROJECT_DIR$/src/scene/LevelThreeScene.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
-        <option value="$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java" />
-        <option value="$PROJECT_DIR$/src/scene/IntroScene.java" />
-        <option value="$PROJECT_DIR$/src/scene/LevelOneScene.java" />
-        <option value="$PROJECT_DIR$/src/Constant/Constant.java" />
         <option value="$PROJECT_DIR$/src/Game/IconGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Game/Anchor.java" />
-        <option value="$PROJECT_DIR$/src/Game/Level.java" />
+        <option value="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
         <option value="$PROJECT_DIR$/src/scene/LevelTwoScene.java" />
+        <option value="$PROJECT_DIR$/src/Game/Player.java" />
+        <option value="$PROJECT_DIR$/src/scene/LevelThreeScene.java" />
+        <option value="$PROJECT_DIR$/src/Constant/Constant.java" />
+        <option value="$PROJECT_DIR$/src/Game/Background/WinningBackground.java" />
+        <option value="$PROJECT_DIR$/src/Game/Background/WhiteBackground.java" />
+        <option value="$PROJECT_DIR$/src/scene/WinningScene.java" />
+        <option value="$PROJECT_DIR$/src/scene/GameOverScene.java" />
+        <option value="$PROJECT_DIR$/src/Game/Anchor.java" />
+        <option value="$PROJECT_DIR$/src/scene/StartScene.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/scene/LevelOneScene.java" />
+        <option value="$PROJECT_DIR$/src/scene/IntroScene.java" />
+        <option value="$PROJECT_DIR$/src/Game/Level.java" />
+        <option value="$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="39" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1401" />
+    <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -273,7 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -310,13 +276,6 @@
             <path>
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="Objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,6 +283,12 @@
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Constant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
@@ -419,8 +384,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -639,11 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530607031365</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add Icons">
+      <created>1530617247376</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530617247376</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -660,7 +633,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -672,6 +644,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -722,66 +695,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Renderer/ImageRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/Leaves.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="86" lean-forward="false" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/Objects/ongmat-pixilart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/WinningScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#1010#1011#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Effect/SpeedEffectIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="92" lean-forward="false" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,19 +717,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/gioithieunhanvat-pixilart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Renderer/IntroBackGroundRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/gioithieunhanvat-pixilart.png" />
     <entry file="file://$PROJECT_DIR$/src/Renderer/BackgroundRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -845,23 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
           <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding>
-            <element signature="e#3206#3207#0" expanded="false" />
-            <element signature="e#3233#3234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/GameOverScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#389#390#0" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,12 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#1408#1409#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-            <element signature="e#1501#1502#0" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,31 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="40" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelThreeBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/LevelThreeScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,19 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Background/GameOverBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,52 +801,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="113" lean-forward="false" selection-start-line="8" selection-start-column="113" selection-end-line="8" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/IntroScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/LevelOneScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-          <folding>
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#451#452#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Background/IntroBackGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="97" lean-forward="false" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Effect/ShieldEffectIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="90" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/GamePlayScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1051,23 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constant/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,16 +849,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,22 +874,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="1020">
+          <caret line="88" column="14" lean-forward="false" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding>
+            <element signature="e#859#922#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <element signature="e#2634#2635#0" expanded="true" />
-            <element signature="e#2667#2668#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,16 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
-          <folding>
-            <element signature="e#859#922#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1156,10 +908,183 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer/WhiteBackgroundRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer/Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Background/GameOverBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Background/WhiteBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="97" lean-forward="false" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/GameOverScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/WinningScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/GamePlayScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/LevelOneScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/IntroScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/MovingObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scene/LevelTwoScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="55" column="78" lean-forward="false" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelTwoBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="113" lean-forward="false" selection-start-line="8" selection-start-column="113" selection-end-line="8" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="86" column="62" lean-forward="false" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
+          <folding>
+            <element signature="e#3162#3163#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/LevelThreeScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Background/LevelThreeBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="100" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Background/WinningBackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

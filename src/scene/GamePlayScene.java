@@ -26,6 +26,7 @@ public class GamePlayScene implements Scene {
         GameObjectManager.instance.recycle(ShieldEffect.class);
         GameObjectManager.instance.add(new BombGenerator());
         GameObjectManager.instance.add(new LeavesGenerator());
+        System.out.println(Level.level);
     }
 
     @Override

@@ -1,16 +1,13 @@
 package scene;
 
 import Base.GameObjectManager;
-import Base.Vector2D;
-import Constant.Constant;
-import Game.Background.Background;
 import Game.Background.GameOverBackground;
-import Game.Background.IntroBackGround;
-import Game.Button;
+import Game.Background.WhiteBackground;
 
 public class GameOverScene implements Scene {
     @Override
     public void init() {
+        GameObjectManager.instance.recycle(WhiteBackground.class);
         GameObjectManager.instance.add(new GameOverBackground());
     }
 

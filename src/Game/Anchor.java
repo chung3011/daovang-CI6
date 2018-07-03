@@ -23,8 +23,8 @@ import javax.sound.sampled.Clip;
 
 public class Anchor extends GameObject implements PhysicBody {
 
-    private final int WIDTH = 10;
-    private final int HEIGHT = 10;
+    private final int WIDTH = 6;
+    private final int HEIGHT = 6;
     private final int STRING_LENGTH = 100;
 
     public float speed;
@@ -106,7 +106,7 @@ public class Anchor extends GameObject implements PhysicBody {
 
         }
 
-        this.boxCollider.position.set( (int) this.position.x - 10, (int) this.position.y - 10 );
+        this.boxCollider.position.set( (int) this.position.x - WIDTH/2, (int) this.position.y - HEIGHT/2 );
     }
 
 
@@ -152,6 +152,7 @@ public class Anchor extends GameObject implements PhysicBody {
                 this.dropSound.stop();
 
                 if (isBomb) {
+                    this.pullSound.stop();
                     System.out.println("GAME OVER");
                     SceneManager.instance.changeScene(new GameOverScene());
                 }

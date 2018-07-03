@@ -64,7 +64,7 @@ public class GameWindow extends JFrame {
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene ||
                             SceneManager.instance.getCurrentScene() instanceof WinningScene
-                            || SceneManager.instance.getCurrentScene() instanceof GameOverAnNhieu) {
+                            || SceneManager.instance.getCurrentScene() instanceof GameOverAnNhieuScene) {
                         Level.level = 0;
                         IconGenerator.instance.resetVerticalPos();
                         SceneManager.instance.changeScene(new StartScene());

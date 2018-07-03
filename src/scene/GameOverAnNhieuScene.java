@@ -4,7 +4,7 @@ import Base.GameObjectManager;
 import Game.Background.GameOverBackground;
 import Game.Background.WhiteBackground;
 
-public class GameOverAnNhieu implements Scene{
+public class GameOverAnNhieuScene implements Scene{
     @Override
     public void init() {
         GameObjectManager.instance.recycle(WhiteBackground.class);

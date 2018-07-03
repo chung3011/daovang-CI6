@@ -1,7 +1,5 @@
 package Game;
 
-import Action.WaitAction;
-import Base.FrameCounter;
 import Constant.Constant;
 import scene.*;
 
@@ -72,9 +70,9 @@ public class Level {
                 SceneManager.instance.changeScene(new LevelTwoScene());
             }
 
-            if (sum > 7) {
+            if (sum == 7 && this.isCompleted == false) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieu());
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
             }
         }
 
@@ -87,9 +85,10 @@ public class Level {
                 SceneManager.instance.changeScene(new LevelThreeScene());
             }
 
-            if (sum > 15) {
+//            if (sum > 15) {
+            if (sum == 15 && this.isCompleted == false) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieu());
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
             }
         }
 
@@ -102,9 +101,10 @@ public class Level {
                 SceneManager.instance.changeScene(new WinningScene());
             }
 
-            if (sum > 15) {
+//            if (sum > 15) {
+            if (sum == 15 && this.isCompleted == false) {
                 this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieu());
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
             }
         }
 

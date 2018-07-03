@@ -3,11 +3,10 @@ package scene;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
-import Game.Background.Background;
 import Game.Background.IntroBackGround;
 import Game.Button;
 
-public class GameOverScene implements Scene {
+public class WinningScene implements Scene {
     @Override
     public void init() {
         Button gameOver = new Button(

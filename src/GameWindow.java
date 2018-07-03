@@ -1,8 +1,9 @@
 import Base.Vector2D;
 import Constant.Constant;
+import Game.IconGenerator;
+import Game.Level;
 import Input.MouseInput;
-import scene.GamePlayScene;
-import scene.SceneManager;
+import scene.*;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -38,6 +39,20 @@ public class GameWindow extends JFrame {
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                     if (SceneManager.instance.getCurrentScene() instanceof GamePlayScene) {
                         gameCanvas.startCatching();
+                    }
+                    else if (SceneManager.instance.getCurrentScene() instanceof StartScene) {
+                        SceneManager.instance.changeScene(new LevelOneScene());
+                    }
+                    else if (SceneManager.instance.getCurrentScene() instanceof LevelOneScene) {
+                        SceneManager.instance.changeScene(new GamePlayScene());
+                    }
+                    else if (SceneManager.instance.getCurrentScene() instanceof LevelTwoScene) {
+                        SceneManager.instance.changeScene(new GamePlayScene());
+                    }
+                    else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene) {
+                        Level.level = 0;
+                        IconGenerator.instance.resetVerticalPos();
+                        SceneManager.instance.changeScene(new LevelOneScene());
                     }
                 }
 

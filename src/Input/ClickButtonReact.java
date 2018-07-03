@@ -1,21 +1,31 @@
 package Input;
 
 import Constant.Constant;
-import scene.GamePlayScene;
-import scene.IntroScene;
-import scene.SceneManager;
-import scene.StartScene;
+import Game.Level;
+import scene.*;
 
 public class ClickButtonReact {
     public static ClickButtonReact instance = new ClickButtonReact();
-    public void run(String labelButton){
-        if(labelButton.equals(Constant.Button.START))
+
+    public void run(String labelButton) {
+        if (labelButton.equals(Constant.Button.START)) {
             if (SceneManager.instance.getCurrentScene() instanceof StartScene) {
-                SceneManager.instance.changeScene(new IntroScene());
-            }
-            else if (SceneManager.instance.getCurrentScene() instanceof IntroScene) {
+                SceneManager.instance.changeScene(new LevelOneScene());
+            } else if (SceneManager.instance.getCurrentScene() instanceof LevelOneScene) {
+                SceneManager.instance.changeScene(new GamePlayScene());
+            } else if (SceneManager.instance.getCurrentScene() instanceof LevelTwoScene) {
                 SceneManager.instance.changeScene(new GamePlayScene());
             }
+        }
+
+        if (labelButton.equals(Constant.Button.REPLAY_ALL))  {
+            if (SceneManager.instance.getCurrentScene() instanceof GameOverScene) {
+                Level.level = 0;
+                SceneManager.instance.changeScene(new LevelOneScene());
+            }
+        }
+
+
 
 
     }

@@ -15,7 +15,6 @@ import Physic.PhysicBody;
 import Physic.BoxCollider;
 import Physic.RunHitObject;
 import scene.GameOverScene;
-import scene.IntroScene;
 import scene.SceneManager;
 
 public class Anchor extends GameObject implements PhysicBody {

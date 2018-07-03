@@ -10,9 +10,12 @@ import Game.ObjectsToCatch.LargeObject.LargeObjectGenerator;
 import Game.ObjectsToCatch.Leaves.LeavesGenerator;
 import Game.ObjectsToCatch.MediumObject.MediumObjectGenerator;
 import Game.ObjectsToCatch.SmallObject.SmallObjectGenerator;
+import Utils.Utils;
+
+import javax.sound.sampled.Clip;
 
 public class GamePlayScene implements Scene {
-
+    Clip themeSound = Utils.loadAudio("resources/audio/spring-weather-2.wav");
 
     public void setUpCharacters() {
 
@@ -33,11 +36,14 @@ public class GamePlayScene implements Scene {
     public void init() {
         GameObjectManager.instance.recycle(Background.class);
         this.setUpCharacters();
+
+        themeSound.loop(-1);
+        themeSound.start();
     }
 
     @Override
     public void deinit() {
         GameObjectManager.instance.clear();
-
+        themeSound.stop();
     }
 }

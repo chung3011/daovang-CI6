@@ -6,7 +6,7 @@ import Renderer.BackgroundRenderer;
 
 public class GameOverBackground extends GameObject {
     public GameOverBackground() {
-        this.renderer = new BackgroundRenderer("resources/images/luoinhenchuan3'-pixilart (1).png", Constant.Window.WIDTH,
+        this.renderer = new BackgroundRenderer("resources/images/chet-do-doc-da-sua-pixilart.png", Constant.Window.WIDTH,
                 Constant.Window.HEIGHT);
     }
 }

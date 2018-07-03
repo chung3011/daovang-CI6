@@ -94,8 +94,8 @@ public class Level {
         }
 
         else if (level == 3) {
-//            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
-//                  countSmallObjects >= Constant.Level.smallLv2 ) {
+//            if (countLargeObjects >= Constant.Level.largeLv3 && countMediumObjects >= Constant.Level.mediumLv3 &&
+//                  countSmallObjects >= Constant.Level.smallLv3 ) {
             if (sum >= 1) {
                 this.isCompleted  = true;
                 this.reset();

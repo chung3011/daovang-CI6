@@ -2,15 +2,10 @@ package Game.ObjectsToCatch.SmallObject;
 
 import Action.ActionAdapter;
 import Action.LimitAction;
-import Base.FrameCounter;
 import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
-import Constant.Constant;
 import Game.Level;
-import Game.ObjectsToCatch.MediumObject.MediumObject;
-
-import java.util.Random;
 
 public class SmallObjectGenerator extends GameObject {
     private Vector2D[] posLevel1 = { new Vector2D(600,500)};

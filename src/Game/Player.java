@@ -14,7 +14,7 @@ public class Player extends GameObject {
     public Player() {
         this.renderer = new ImageRenderer("resources/images/Objects/nhennhen-pixilart.png", 60, 60);
         this.position = new Vector2D(WINDOW_WIDTH/2, WINDOW_HEIGHT/7);
-//        System.out.println(position.x + "  " + position.y);
+        System.out.println(position.x + "  " + position.y);
     }
 
     public Vector2D getPosition() {

@@ -1,9 +1,6 @@
 package Game.Bomb;
 
-import Action.ActionAdapter;
-import Action.LimitAction;
-import Action.SequenceAction;
-import Action.WaitAction;
+import Action.*;
 import Base.GameObject;
 import Base.GameObjectManager;
 import Constant.Constant;
@@ -25,32 +22,36 @@ public class BombGenerator extends GameObject {
 
     public void createAction() {
         if (Level.level == 1) {
-            this.addAction(
+            this.addAction(new LimitAction( new SequenceAction(
                     new ActionAdapter() {
                         @Override
                         public boolean run(GameObject owner) {
                             Bomb bomb = GameObjectManager.instance.recycle(Bomb.class);
 //                            bomb.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
-                            bomb.position.set(300,300);
-                            bomb.boxCollider.position.set((int) bomb.position.x - 20, (int) bomb.position.y - 20);
+                            bomb.position.set(0, 150 + random.nextInt(Constant.Window.HEIGHT - 150));
+                            bomb.velocity.set(random.nextInt(5), 0);
                             return true;
                         }
-                    });
+                    },
+                    new WaitAction(50)
+            ),
+            2));
         }
 
+
         if (Level.level == 2) {
-            this.addAction(new LimitAction(
+            this.addAction(new RepeatActionForever(new SequenceAction(
                     new ActionAdapter() {
                         @Override
                         public boolean run(GameObject owner) {
                             Bomb bomb = GameObjectManager.instance.recycle(Bomb.class);
-                            bomb.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
-                            bomb.boxCollider.position.set((int) bomb.position.x - 20, (int) bomb.position.y - 20);
+//                            bomb.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
+                            bomb.position.set(0, 150 + random.nextInt(Constant.Window.HEIGHT -150));
                             return true;
                         }
                     },
-                    2)
-            );
+                    new WaitAction(1000))
+            ));
         }
     }
 

@@ -28,7 +28,7 @@ public class LevelOneScene implements Scene {
                 new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2 + 150) ,
                 200,
                 200,
-                Constant.Button.START,"resources/images/pressspacetostart-pixilart.png");
+                Constant.Button.START,"resources/images/pressspacetocatch-pixilart.png");
 
         GameObjectManager.instance.recycle(IntroBackGround.class);
         GameObjectManager.instance.add(winningConditions);

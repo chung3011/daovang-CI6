@@ -6,6 +6,7 @@ import Constant.Constant;
 import scene.GamePlayScene;
 import scene.LevelTwoScene;
 import scene.SceneManager;
+import scene.StartScene;
 
 public class Level {
 
@@ -65,7 +66,7 @@ public class Level {
                 this.isCompleted  = true;
                 System.out.println("YOU WIN!");
                 this.reset();
-                System.exit(1);
+                SceneManager.instance.changeScene(new StartScene());
             }
         }
 

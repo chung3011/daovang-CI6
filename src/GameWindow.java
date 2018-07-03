@@ -40,6 +40,12 @@ public class GameWindow extends JFrame {
                         gameCanvas.startCatching();
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof StartScene) {
+                        SceneManager.instance.changeScene(new IntroScene());
+//                        Level.level = 2;
+//                        SceneManager.instance.changeScene(new LevelTwoScene());
+                    }
+
+                    else if (SceneManager.instance.getCurrentScene() instanceof IntroScene) {
                         SceneManager.instance.changeScene(new LevelOneScene());
 //                        Level.level = 2;
 //                        SceneManager.instance.changeScene(new LevelTwoScene());
@@ -48,6 +54,11 @@ public class GameWindow extends JFrame {
                         SceneManager.instance.changeScene(new GamePlayScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelTwoScene) {
+                        SceneManager.instance.changeScene(new GamePlayScene());
+//                        Level.level = 2;
+                    }
+
+                    else if (SceneManager.instance.getCurrentScene() instanceof LevelThreeScene) {
                         SceneManager.instance.changeScene(new GamePlayScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof GameOverScene) {

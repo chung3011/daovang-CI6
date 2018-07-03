@@ -159,10 +159,12 @@ public class Anchor extends GameObject implements PhysicBody {
 
         else if (gameObject instanceof ShieldEffect) {
             this.hasShield = true;
+            GameObjectManager.instance.add(IconGenerator.instance.addShieldIcon());
         }
 
         else if (gameObject instanceof  SpeedEffect) {
             this.speed = 8;
+            GameObjectManager.instance.add(IconGenerator.instance.addSpeedIcon());
         }
 
         else if (gameObject instanceof Leaves) {

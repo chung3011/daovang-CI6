@@ -4,6 +4,7 @@ package scene;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Constant.Constant;
+import Game.Background.CharactersBackground;
 import Game.Button;
 
 public class StartScene implements Scene {
@@ -16,14 +17,14 @@ public class StartScene implements Scene {
 //                "intro","resources/images/temp_intro.jpg"); // "Start Button"
 //
 
-        Button startButton = new Button(
-                new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2+200) ,
-                300,
-                80,
-                Constant.Button.START,"resources/images/pressspacetostart-pixilart.png"); // "Start Button"
+//        Button startButton = new Button(
+//                new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2+200) ,
+//                300,
+//                80,
+//                Constant.Button.START,"resources/images/pressspacetostart-pixilart.png"); // "Start Button"
 
 //        GameObjectManager.instance.add(new Background());
-        GameObjectManager.instance.add(startButton);
+        GameObjectManager.instance.add(new CharactersBackground());
     }
 
     @Override

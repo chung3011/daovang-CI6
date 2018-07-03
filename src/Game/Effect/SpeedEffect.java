@@ -18,8 +18,16 @@ public class SpeedEffect extends GameObject implements PhysicBody {
         this.boxCollider = new BoxCollider( 50,50 );
         this.position = new Vector2D(150, 150);
         this.isCaught = false;
-        if (Level.level == 2) {
+        if (Level.level == 1) {
+//            this.isAlive = false;
+            this.position.set(600, 150);
+
+        }
+        else if (Level.level == 2) {
             this.position.set(550,520);
+        }
+        else if (Level.level == 3) {
+            this.position.set(171,380);
         }
     }
 

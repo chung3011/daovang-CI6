@@ -41,6 +41,10 @@ public class Constant {
         public static final int smallLv2 = 3;
         public static final int mediumLv2 = 3;
         public static final int largeLv2 = 4;
+
+        public static final int smallLv3 = 5;
+        public static final int mediumLv3 = 3;
+        public static final int largeLv23= 2;
     }
 
 }

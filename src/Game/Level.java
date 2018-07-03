@@ -15,15 +15,16 @@ public class Level {
     public int countMediumObjects;
     public int countLeaves;
     public int sum;
+    public static int level;
 
 
 
     private boolean isCompleted;
 
-    public static int level;
+//    public static int level;
 
     public Level() {
-        level += 1;
+        this.level = 1 ;
         this.reset();
     }
 
@@ -62,28 +63,32 @@ public class Level {
 
     public void isCompleted() {
         if (level == 1) {
-            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
+//            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects
+//                    >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
+            if (sum >= 1 ) {
                 this.isCompleted = true;
                 System.out.println("level up!");
+                this.level++;
                 this.reset();
                 SceneManager.instance.changeScene(new LevelTwoScene());
             }
 
-            if (sum >= 7) {
+            if (sum > 7) {
                 this.reset();
                 SceneManager.instance.changeScene(new GameOverScene());
             }
         }
 
         else if (level == 2) {
-            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 && countSmallObjects >= Constant.Level.smallLv2 ) {
+//            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
+//                  countSmallObjects >= Constant.Level.smallLv2 ) {
+            if (countLargeObjects >= 1) {
                 this.isCompleted  = true;
-                System.out.println("YOU WIN!");
                 this.reset();
-                SceneManager.instance.changeScene(new StartScene());
+                SceneManager.instance.changeScene(new LevelThreeScene());
             }
 
-            if (sum >= 15) {
+            if (sum > 15) {
                 this.reset();
                 SceneManager.instance.changeScene(new GameOverScene());
             }
@@ -98,7 +103,7 @@ public class Level {
 
 
     public int getLevel() {
-        return level;
+        return this.level;
     }
 
 }

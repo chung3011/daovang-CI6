@@ -12,7 +12,7 @@ public class Leaves extends GameObject implements PhysicBody{
     private boolean isCaught;
 
     public Leaves() {
-        this.renderer = new ImageRenderer("resources/images/Objects/leaf.png", 65, 65);
+        this.renderer = new ImageRenderer("resources/images/Objects/lado'-pixilart.png", 65, 65);
         this.boxCollider = new BoxCollider( 65,65 );
         this.isCaught = false;
     }

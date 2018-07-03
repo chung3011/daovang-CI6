@@ -18,6 +18,11 @@ public class LeavesGenerator extends GameObject{
                                     new Vector2D(800, 570), new Vector2D(250, 500),
                                     new Vector2D(450, 450), new Vector2D(700, 270)};
 
+    private Vector2D[] posLevel3 = { new Vector2D(160,100), new Vector2D(150, 280),
+            new Vector2D(339, 390), new Vector2D(424, 270),
+            new Vector2D(683, 380), new Vector2D(773, 150),
+            new Vector2D(920, 500), new Vector2D(920, 200)};
+
     public LeavesGenerator() {
         this.createAction();
     }
@@ -52,6 +57,22 @@ public class LeavesGenerator extends GameObject{
                         }
                     },
                     posLevel2.length)
+            );
+        }
+
+        else if (Level.level == 3) {
+            this.addAction(new LimitAction(
+                    new ActionAdapter() {
+                        int count = 0;
+                        @Override
+                        public boolean run(GameObject owner) {
+                            Leaves leaf = GameObjectManager.instance.recycle(Leaves.class);
+                            leaf.position.set(posLevel3[count++]);
+                            leaf.boxCollider.position.set((int) leaf.position.x - 20, (int) leaf.position.y - 20);
+                            return true;
+                        }
+                    },
+                    posLevel3.length)
             );
         }
     }

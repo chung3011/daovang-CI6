@@ -16,9 +16,17 @@ public class ShieldEffect extends GameObject implements PhysicBody {
         this.renderer = new ImageRenderer("resources/images/Objects/buomhong'-pixilart.png", 50, 50);
         this.boxCollider = new BoxCollider( 50,50 );
         this.isCaught = false;
-        this.position.set(500,150);
+        if (Level.level == 1) {
+//            this.isAlive = false;
+
+            this.position.set(600, 200);
+        }
         if (Level.level == 2) {
             this.position.set(900, 320);
+        }
+
+        if (Level.level == 3) {
+            this.position.set(339,500);
         }
     }
 

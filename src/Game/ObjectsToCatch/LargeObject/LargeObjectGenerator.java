@@ -19,6 +19,8 @@ public class LargeObjectGenerator extends GameObject {
     private Vector2D[] posLevel2 = { new Vector2D(820,220), new Vector2D(890, 450),
                                     new Vector2D(290, 400), new Vector2D(140, 300)};
 
+    private Vector2D[] posLevel3 = { new Vector2D(90,200), new Vector2D(860, 330) };
+
     public LargeObjectGenerator() {
         this.random = new Random();
         this.createAction();
@@ -68,6 +70,22 @@ public class LargeObjectGenerator extends GameObject {
                         }
                     },
                     4)
+            );
+        }
+
+        else if (Level.level == 3) {
+            this.addAction(new LimitAction(
+                    new ActionAdapter() {
+                        int count = 0;
+                        @Override
+                        public boolean run(GameObject owner) {
+                            LargeObject largeObject = GameObjectManager.instance.recycle(LargeObject.class);
+                            largeObject.position.set(posLevel3[count++]);
+                            largeObject.boxCollider.position.set((int) largeObject.position.x - 20, (int) largeObject.position.y - 20);
+                            return true;
+                        }
+                    },
+                    posLevel3.length)
             );
         }
 

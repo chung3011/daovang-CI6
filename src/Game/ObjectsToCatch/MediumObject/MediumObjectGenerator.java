@@ -19,6 +19,8 @@ public class MediumObjectGenerator extends GameObject {
                                     new Vector2D(500, 250), new Vector2D(700, 490),
                                     new Vector2D(800, 350)};
 
+    private Vector2D[] posLevel3 = {new Vector2D(256, 330),new Vector2D(512, 460),
+            new Vector2D(813, 490) };
     public MediumObjectGenerator() {
         this.random = new Random();
         this.createAction();
@@ -42,7 +44,7 @@ public class MediumObjectGenerator extends GameObject {
             );
         }
 
-        if (Level.level == 2) {
+        else if (Level.level == 2) {
             this.addAction(new LimitAction(
                     new ActionAdapter() {
                         int count = 0;
@@ -56,6 +58,23 @@ public class MediumObjectGenerator extends GameObject {
                         }
                     },
                     posLevel2.length)
+            );
+        }
+
+        else if (Level.level == 3) {
+            this.addAction(new LimitAction(
+                    new ActionAdapter() {
+                        int count = 0;
+
+                        @Override
+                        public boolean run(GameObject owner) {
+                            MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
+                            mediumObject.position.set(posLevel3[count++]);
+                            mediumObject.boxCollider.position.set((int) mediumObject.position.x - 20, (int) mediumObject.position.y - 20);
+                            return true;
+                        }
+                    },
+                    posLevel3.length)
             );
         }
 

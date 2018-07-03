@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c17f4ed-1dae-4e18-8f34-35cbae0a1ee6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/boruavientranga-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/mangnhenxinvl1-pixilart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/Background/GameOverAnNhieu.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/scene/GameOverAnNhieu.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/boruavientrangb-pixilart.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObject.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObject.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Background/Background.java" afterPath="$PROJECT_DIR$/src/Game/Background/Background.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Cockcroach/CockcroachGenerator.java" afterPath="$PROJECT_DIR$/src/Game/Cockcroach/CockcroachGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/Level.java" afterPath="$PROJECT_DIR$/src/Game/Level.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObject.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObject.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/scene/GamePlayScene.java" afterPath="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+              <caret line="17" column="90" lean-forward="false" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -113,11 +95,11 @@
       <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="929">
-              <caret line="106" column="71" lean-forward="false" selection-start-line="106" selection-start-column="71" selection-end-line="106" selection-end-column="71" />
+            <state relative-caret-position="380">
+              <caret line="98" column="22" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
-                <element signature="e#3168#3169#0" expanded="true" />
-                <element signature="e#3201#3202#0" expanded="true" />
+                <element signature="e#3162#3163#0" expanded="true" />
+                <element signature="e#3195#3196#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,10 +108,17 @@
       <file leaf-file-name="LargeObjectIcon.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="borua-pixilart (1).png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/images/Objects/borua-pixilart (1).png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -138,16 +127,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="16" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmallObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -212,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/Game/Background/GameOverBackground.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/GameOverAnNhieu.java" />
         <option value="$PROJECT_DIR$/src/scene/GameOverAnNhieu.java" />
-        <option value="$PROJECT_DIR$/src/Game/Level.java" />
         <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
@@ -222,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
         <option value="$PROJECT_DIR$/src/Game/Cockcroach/CockcroachGenerator.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/Background.java" />
+        <option value="$PROJECT_DIR$/src/Game/Level.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObject.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java" />
       </list>
@@ -572,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530628109177</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add audio">
+      <created>1530629256704</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530629256704</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -657,13 +643,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Game/Effect/ShieldEffectIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="90" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -1014,17 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="106" column="71" lean-forward="false" selection-start-line="106" selection-start-column="71" selection-end-line="106" selection-end-column="71" />
-          <folding>
-            <element signature="e#3168#3169#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scene/GamePlayScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
@@ -1065,18 +1033,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="98" column="22" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#3162#3163#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/Objects/borua-pixilart (1).png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+          <caret line="17" column="90" lean-forward="false" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

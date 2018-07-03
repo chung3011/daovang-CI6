@@ -63,9 +63,9 @@ public class Level {
 
     public void isCompleted() {
         if (level == 1) {
-//            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects
-//                    >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
-            if (sum >= 1 ) {
+            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects
+                    >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
+//            if (sum >= 1 ) {
                 this.isCompleted = true;
                 System.out.println("level up!");
                 this.reset();
@@ -79,9 +79,9 @@ public class Level {
         }
 
         else if (level == 2) {
-//            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
-//                  countSmallObjects >= Constant.Level.smallLv2 ) {
-            if (countSmallObjects >= 1) {
+            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
+                  countSmallObjects >= Constant.Level.smallLv2 ) {
+//            if (countSmallObjects >= 1) {
                 this.isCompleted  = true;
                 this.reset();
                 SceneManager.instance.changeScene(new LevelThreeScene());
@@ -94,9 +94,9 @@ public class Level {
         }
 
         else if (level == 3) {
-//            if (countLargeObjects >= Constant.Level.largeLv3 && countMediumObjects >= Constant.Level.mediumLv3 &&
-//                  countSmallObjects >= Constant.Level.smallLv3 ) {
-            if (sum >= 1) {
+            if (countLargeObjects >= Constant.Level.largeLv3 && countMediumObjects >= Constant.Level.mediumLv3 &&
+                  countSmallObjects >= Constant.Level.smallLv3 ) {
+//            if (sum >= 1) {
                 this.isCompleted  = true;
                 this.reset();
                 SceneManager.instance.changeScene(new WinningScene());

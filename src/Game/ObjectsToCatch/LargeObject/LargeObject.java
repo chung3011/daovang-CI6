@@ -15,7 +15,7 @@ public class LargeObject extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public LargeObject() {
-        this.renderer = new ImageRenderer("resources/images/Objects/boruavientranga-pixilart.png", 60, 60);
+        this.renderer = new ImageRenderer("resources/images/Objects/borua-pixilart (1).png", 60, 60);
         this.boxCollider = new BoxCollider( 55,55 );
 
         this.isCaught = false;

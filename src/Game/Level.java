@@ -3,10 +3,7 @@ package Game;
 import Action.WaitAction;
 import Base.FrameCounter;
 import Constant.Constant;
-import scene.GamePlayScene;
-import scene.LevelTwoScene;
-import scene.SceneManager;
-import scene.StartScene;
+import scene.*;
 
 public class Level {
 
@@ -16,6 +13,8 @@ public class Level {
     public int countSmallObjects;
     public int countLargeObjects;
     public int countMediumObjects;
+    public int countLeaves;
+    public int sum;
 
 
 
@@ -33,6 +32,8 @@ public class Level {
         this.countLargeObjects = 0;
         this.countMediumObjects = 0;
         this.countSmallObjects = 0;
+        this.countLeaves = 0;
+        this.sum = 0;
         IconGenerator.instance.resetVerticalPos();
 
     }
@@ -59,6 +60,11 @@ public class Level {
                 this.reset();
                 SceneManager.instance.changeScene(new LevelTwoScene());
             }
+
+            if (sum >= 10) {
+                this.reset();
+                SceneManager.instance.changeScene(new GameOverScene());
+            }
         }
 
         else if (level == 2) {
@@ -68,8 +74,18 @@ public class Level {
                 this.reset();
                 SceneManager.instance.changeScene(new StartScene());
             }
+
+            if (sum >= 15) {
+                this.reset();
+                SceneManager.instance.changeScene(new GameOverScene());
+            }
         }
 
+    }
+
+    public void countObjects() {
+        sum = this.countLargeObjects + this.countMediumObjects
+                + this.countSmallObjects + this.countLeaves;
     }
 
 //    public void gameOverReset() {

@@ -29,7 +29,7 @@ public class BombGenerator extends GameObject {
                             Bomb bomb = GameObjectManager.instance.recycle(Bomb.class);
 //                            bomb.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
                             bomb.position.set(0, 150 + random.nextInt(Constant.Window.HEIGHT - 150));
-                            bomb.velocity.set(random.nextInt(5), 0);
+                            bomb.velocity.set(1+random.nextInt(5), 0);
                             return true;
                         }
                     },
@@ -47,6 +47,7 @@ public class BombGenerator extends GameObject {
                             Bomb bomb = GameObjectManager.instance.recycle(Bomb.class);
 //                            bomb.position.set(60 + random.nextInt(900),160 +  random.nextInt(380));
                             bomb.position.set(0, 150 + random.nextInt(Constant.Window.HEIGHT -150));
+                            bomb.velocity.set(1+random.nextInt(5), 0);
                             return true;
                         }
                     },

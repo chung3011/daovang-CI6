@@ -56,7 +56,7 @@ public class Bomb extends GameObject implements PhysicBody {
 
     private void backToScreen() {
         if (this.position.x > WINDOW_WIDTH) {
-            this.position.set(0, this.random.nextInt(WINDOW_HEIGHT)+150);
+            this.position.set(3, this.random.nextInt(WINDOW_HEIGHT)+150);
         }
         if (this.position.x < 0) {
             this.position.set(WINDOW_WIDTH, this.random.nextInt(WINDOW_HEIGHT) + 150);

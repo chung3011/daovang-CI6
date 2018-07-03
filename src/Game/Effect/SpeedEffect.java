@@ -4,6 +4,7 @@ import Base.GameObject;
 import Base.GameObjectManager;
 import Base.Vector2D;
 import Game.Anchor;
+import Game.Level;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
@@ -13,10 +14,13 @@ public class SpeedEffect extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public SpeedEffect() {
-        this.renderer = new ImageRenderer("resources/images/Objects/buombuom-pixilart.png", 50, 50);
+        this.renderer = new ImageRenderer("resources/images/Objects/buomdo'-pixilart (1).png", 50, 50);
         this.boxCollider = new BoxCollider( 50,50 );
         this.position = new Vector2D(150, 150);
         this.isCaught = false;
+        if (Level.level == 2) {
+            this.position.set(550,520);
+        }
     }
 
     @Override

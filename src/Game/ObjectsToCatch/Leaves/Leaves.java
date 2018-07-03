@@ -1,4 +1,4 @@
-package Game.ObjectsToCatch;
+package Game.ObjectsToCatch.Leaves;
 
 import Base.GameObject;
 import Base.GameObjectManager;

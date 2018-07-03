@@ -2,16 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c17f4ed-1dae-4e18-8f34-35cbae0a1ee6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/buomdo'-pixilart (1).png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/images/Objects/buomhong'-pixilart.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Utils/Utils.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Level.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Player.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Player.class" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Bomb/Bomb.java" afterPath="$PROJECT_DIR$/src/Game/Bomb/Bomb.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java" afterPath="$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/Anchor.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/IconGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/IconGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameCanvas.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameCanvas.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/GameWindow.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Input/ClickButtonReact.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/Input/MouseInput.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/GamePlayScene.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" afterPath="$PROJECT_DIR$/out/production/Project-CI/scene/StartScene.class" />
+      <change beforePath="$PROJECT_DIR$/resources/images/Objects/buombuom-pixilart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/images/Objects/buomhong-pixilart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/images/buomdobangtiachop-pixilart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/images/buomhongbangtraitim-pixilart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/images/temp_intro.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/images/temp_start.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Anchor.java" afterPath="$PROJECT_DIR$/src/Game/Anchor.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" afterPath="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/IconGenerator.java" afterPath="$PROJECT_DIR$/src/Game/IconGenerator.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/Level.java" afterPath="$PROJECT_DIR$/src/Game/Level.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/Leaves.java" />
+      <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" />
       <change beforePath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" afterPath="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" afterPath="$PROJECT_DIR$/src/GameCanvas.java" />
+      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change beforePath="$PROJECT_DIR$/src/Input/ClickButtonReact.java" afterPath="$PROJECT_DIR$/src/Input/ClickButtonReact.java" />
+      <change beforePath="$PROJECT_DIR$/src/Input/MouseInput.java" afterPath="$PROJECT_DIR$/src/Input/MouseInput.java" />
+      <change beforePath="$PROJECT_DIR$/src/scene/GamePlayScene.java" afterPath="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
       <change beforePath="$PROJECT_DIR$/src/scene/StartScene.java" afterPath="$PROJECT_DIR$/src/scene/StartScene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,89 +56,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BombGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java">
+      <file leaf-file-name="Anchor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-              <folding>
-                <element signature="e#635#1205#0" expanded="true" />
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1413#1982#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LargeObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="53" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="53" selection-end-column="9" />
-              <folding>
-                <element signature="e#604#667#0" expanded="false" />
-                <element signature="e#2172#2173#0" expanded="true" />
-                <element signature="e#2199#2200#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediumObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="2127">
+              <caret line="169" column="12" lean-forward="false" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmallObjectGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
+      <file leaf-file-name="ImageRenderer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Renderer/ImageRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" column="14" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="145">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeavesGenerator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java">
+      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="203">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WinningScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scene/WinningScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -114,27 +89,55 @@
       <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
+            <state relative-caret-position="236">
+              <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding>
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
+                <element signature="e#2496#2497#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelTwoScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scene/LevelTwoScene.java">
+      <file leaf-file-name="IconGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/IconGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="16" column="96" lean-forward="false" selection-start-line="16" selection-start-column="96" selection-end-line="16" selection-end-column="96" />
+            <state relative-caret-position="301">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameOverScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scene/GameOverScene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,18 +145,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bomb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Bomb/Bomb.java">
+      <file leaf-file-name="LeavesIcon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediumObjectIcon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectIcon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/Game/Antidote.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SpeedEffect.java" />
         <option value="$PROJECT_DIR$/src/Game/SpeedEffect.java" />
-        <option value="$PROJECT_DIR$/src/GameCanvas.java" />
         <option value="$PROJECT_DIR$/src/Game/ShieldEffect.java" />
         <option value="$PROJECT_DIR$/src/Base/GameObjectManager.java" />
         <option value="$PROJECT_DIR$/src/Game/Background.java" />
@@ -193,28 +201,34 @@
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectIcon.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObject.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectIcon.java" />
-        <option value="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
-        <option value="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
         <option value="$PROJECT_DIR$/src/Game/Leaves.java" />
         <option value="$PROJECT_DIR$/src/scene/GamePlayScene.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves.java" />
-        <option value="$PROJECT_DIR$/src/Game/Anchor.java" />
         <option value="$PROJECT_DIR$/src/scene/GameOverScene.java" />
         <option value="$PROJECT_DIR$/src/scene/WinningScene.java" />
-        <option value="$PROJECT_DIR$/src/Input/ClickButtonReact.java" />
         <option value="$PROJECT_DIR$/src/Game/Background/IntroBackGround.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/scene/LevelOneScene.java" />
         <option value="$PROJECT_DIR$/src/scene/LevelTwoScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Player.java" />
-        <option value="$PROJECT_DIR$/src/Game/Level.java" />
         <option value="$PROJECT_DIR$/src/Game/Bomb/Bomb.java" />
-        <option value="$PROJECT_DIR$/src/scene/StartScene.java" />
         <option value="$PROJECT_DIR$/src/Game/Bomb/BombGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
         <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Input/ClickButtonReact.java" />
+        <option value="$PROJECT_DIR$/src/Input/MouseInput.java" />
+        <option value="$PROJECT_DIR$/src/GameCanvas.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java" />
+        <option value="$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java" />
+        <option value="$PROJECT_DIR$/src/scene/StartScene.java" />
+        <option value="$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java" />
+        <option value="$PROJECT_DIR$/src/Game/IconGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Game/Level.java" />
+        <option value="$PROJECT_DIR$/src/Game/Anchor.java" />
       </list>
     </option>
   </component>
@@ -311,6 +325,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="ObjectsToCatch" type="462c0819:PsiDirectoryNode" />
+              <item name="Leaves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="ObjectsToCatch" type="462c0819:PsiDirectoryNode" />
+              <item name="MediumObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="ObjectsToCatch" type="462c0819:PsiDirectoryNode" />
               <item name="SmallObject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -323,13 +353,13 @@
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Physic" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="daovang-CI6" type="b2602c69:ProjectViewProjectNode" />
               <item name="daovang-CI6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -540,12 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530600849805</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add objects' positions">
+      <created>1530603739402</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530603739402</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1356" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -560,7 +596,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25884956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25884956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,43 +650,19 @@
     <MESSAGE value="add gameOver scene" />
     <MESSAGE value="add Scenes" />
     <MESSAGE value="add moving bombs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add moving bombs" />
+    <MESSAGE value="add objects' positions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add objects' positions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/images/winning-condition-pixilart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/anchor.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="91" lean-forward="false" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="17" column="87" lean-forward="false" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="89" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -674,39 +686,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/buomhongbangtraitim-pixilart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/images/buomdobangtiachop-pixilart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/images/Objects/chuonchuon-pixilart.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectIcon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="90" lean-forward="false" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="91" lean-forward="false" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -718,39 +707,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scene/SceneManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/IconGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/GameOverScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,36 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1006#1007#0" expanded="false" />
-            <element signature="e#1042#1043#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input/MouseInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -840,38 +771,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Input/ClickButtonReact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
-          <caret line="121" column="17" lean-forward="true" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/MovingObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="48" column="96" lean-forward="true" selection-start-line="48" selection-start-column="96" selection-end-line="48" selection-end-column="96" />
-          <folding>
-            <element signature="e#2278#2432#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,23 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
-          <folding>
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Bomb/Bomb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
@@ -969,14 +856,6 @@
             <element signature="e#1487#1488#0" expanded="true" />
             <element signature="e#1526#1527#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,42 +872,209 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/Leaves.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LargeObject/LargeObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="555">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
-            <element signature="e#604#667#0" expanded="false" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
+            <element signature="e#773#836#0" expanded="false" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3084#3085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding>
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2283#2284#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="390">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2367#2368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Input/ClickButtonReact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/SmallObject/SmallObjectGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/Input/MouseInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="420">
+          <caret line="63" column="38" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="74" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/LeavesGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="593">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="53" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/buomhongbangtraitim-pixilart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/buomdobangtiachop-pixilart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-825">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Effect/SpeedEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="92" lean-forward="false" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Effect/ShieldEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/StartScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/MediumObject/MediumObjectIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/ObjectsToCatch/Leaves/LeavesIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/IconGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Anchor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2127">
+          <caret line="169" column="12" lean-forward="false" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer/ImageRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scene/GameOverScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

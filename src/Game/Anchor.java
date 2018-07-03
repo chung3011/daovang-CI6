@@ -8,7 +8,7 @@ import Game.Bomb.Bomb;
 import Game.Effect.ShieldEffect;
 import Game.Effect.SpeedEffect;
 import Game.ObjectsToCatch.LargeObject.LargeObject;
-import Game.ObjectsToCatch.Leaves;
+import Game.ObjectsToCatch.Leaves.Leaves;
 import Game.ObjectsToCatch.MediumObject.MediumObject;
 import Game.ObjectsToCatch.SmallObject.SmallObject;
 import Physic.PhysicBody;
@@ -167,6 +167,8 @@ public class Anchor extends GameObject implements PhysicBody {
 
         else if (gameObject instanceof Leaves) {
             this.movingDirection.multiply(1.0f/4.0f);
+            level.addLeaf();
+            GameObjectManager.instance.add(IconGenerator.instance.addLeaf());
         }
     }
 

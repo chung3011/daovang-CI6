@@ -1,7 +1,6 @@
 
 import Base.GameObjectManager;
 import Game.*;
-import Input.MouseInput;
 import scene.SceneManager;
 import scene.StartScene;
 
@@ -49,10 +48,10 @@ public class GameCanvas extends JPanel {
     public void runAll() {
         GameObjectManager.instance.runAll();
 
-        if(MouseInput.instance.clicked){
-            MouseInput.instance.checkMouseClicked();
-            MouseInput.instance.clicked = false;
-        }
+//        if(MouseInput.instance.clicked){
+//            MouseInput.instance.checkMouseClicked();
+//            MouseInput.instance.clicked = false;
+//        }
         SceneManager.instance.performChangeSceneIfNeeded();
     }
 

@@ -2,6 +2,8 @@ package Game;
 
 import Constant.Constant;
 import Game.ObjectsToCatch.LargeObject.LargeObjectIcon;
+import Game.ObjectsToCatch.Leaves.LeavesGenerator;
+import Game.ObjectsToCatch.Leaves.LeavesIcon;
 import Game.ObjectsToCatch.MediumObject.MediumObjectIcon;
 import Game.ObjectsToCatch.SmallObject.SmallObjectIcon;
 
@@ -38,6 +40,13 @@ public class IconGenerator {
         return smallObjectIcon;
     }
 
+
+    public LeavesIcon addLeaf() {
+        LeavesIcon leafIcon = new LeavesIcon();
+        leafIcon.position.set(verticalPos, horizonPos);
+        this.changeHorizontalPos();
+        return  leafIcon;
+    }
     public void resetVerticalPos() {
         this.verticalPos = 20;
     }

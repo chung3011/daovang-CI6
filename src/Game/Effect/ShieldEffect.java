@@ -3,6 +3,7 @@ package Game.Effect;
 import Base.GameObject;
 import Base.GameObjectManager;
 import Game.Anchor;
+import Game.Level;
 import Physic.BoxCollider;
 import Physic.PhysicBody;
 import Renderer.ImageRenderer;
@@ -12,10 +13,13 @@ public class ShieldEffect extends GameObject implements PhysicBody {
     private boolean isCaught;
 
     public ShieldEffect() {
-        this.renderer = new ImageRenderer("resources/images/Objects/buomhong-pixilart.png", 50, 50);
+        this.renderer = new ImageRenderer("resources/images/Objects/buomhong'-pixilart.png", 50, 50);
         this.boxCollider = new BoxCollider( 50,50 );
         this.isCaught = false;
         this.position.set(500,150);
+        if (Level.level == 2) {
+            this.position.set(900, 320);
+        }
     }
 
     @Override

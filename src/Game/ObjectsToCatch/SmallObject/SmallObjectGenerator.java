@@ -13,13 +13,11 @@ import Game.ObjectsToCatch.MediumObject.MediumObject;
 import java.util.Random;
 
 public class SmallObjectGenerator extends GameObject {
-    private FrameCounter frameCounter;
-    private Random random;
     private Vector2D[] posLevel1 = { new Vector2D(600,500)};
-    private int need;
+    private Vector2D[] posLevel2 = { new Vector2D(300, 280), new Vector2D(450, 150),
+                                    new Vector2D(630, 350), new Vector2D(700, 150)};
 
     public SmallObjectGenerator() {
-        this.random = new Random();
         this.createAction();
     }
 
@@ -38,6 +36,22 @@ public class SmallObjectGenerator extends GameObject {
                         }
                     },
                     1)
+            );
+        }
+
+        else if (Level.level == 2) {
+            this.addAction(new LimitAction(
+                    new ActionAdapter() {
+                        int count = 0;
+                        @Override
+                        public boolean run(GameObject owner) {
+                            SmallObject smallObject = GameObjectManager.instance.recycle(SmallObject.class);
+                            smallObject.position.set(posLevel2[count++]);
+                            smallObject.boxCollider.position.set((int) smallObject.position.x - 20, (int) smallObject.position.y - 20);
+                            return true;
+                        }
+                    },
+                    posLevel2.length)
             );
         }
 

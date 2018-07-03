@@ -41,15 +41,23 @@ public class Level {
 
     public void addLargeObjects() {
         this.countLargeObjects++;
+        this.sum++;
     }
 
     public void addMediumObjects() {
         this.countMediumObjects++;
+        this.sum++;
     }
 
 
     public void addSmallObjects() {
         this.countSmallObjects++;
+        this.sum++;
+    }
+
+    public void addLeaf() {
+        this.countLeaves++;
+        this.sum++;
     }
 
     public void isCompleted() {
@@ -61,7 +69,7 @@ public class Level {
                 SceneManager.instance.changeScene(new LevelTwoScene());
             }
 
-            if (sum >= 10) {
+            if (sum >= 7) {
                 this.reset();
                 SceneManager.instance.changeScene(new GameOverScene());
             }
@@ -88,13 +96,6 @@ public class Level {
                 + this.countSmallObjects + this.countLeaves;
     }
 
-//    public void gameOverReset() {
-//        this.isCompleted = false;
-//        this.countLargeObjects = 0;
-//        this.countMediumObjects = 0;
-//        this.countSmallObjects = 0;
-//        IconGenerator.instance.resetVerticalPos();
-//    }
 
     public int getLevel() {
         return level;

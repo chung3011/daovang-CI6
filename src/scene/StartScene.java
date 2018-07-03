@@ -9,12 +9,12 @@ import Game.Button;
 public class StartScene implements Scene {
     @Override
     public void init() {
-        Button intro = new Button(
-                new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2-50) ,
-                500,
-                200,
-                "intro","resources/images/temp_intro.jpg"); // "Start Button"
-
+//        Button intro = new Button(
+//                new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2-50) ,
+//                500,
+//                200,
+//                "intro","resources/images/temp_intro.jpg"); // "Start Button"
+//
 
         Button startButton = new Button(
                 new Vector2D(Constant.Window.WIDTH/2, Constant.Window.HEIGHT/2+200) ,
@@ -23,7 +23,6 @@ public class StartScene implements Scene {
                 Constant.Button.START,"resources/images/pressspacetostart-pixilart.png"); // "Start Button"
 
 //        GameObjectManager.instance.add(new Background());
-        GameObjectManager.instance.add(intro);
         GameObjectManager.instance.add(startButton);
     }
 

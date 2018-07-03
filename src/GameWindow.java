@@ -2,7 +2,6 @@ import Base.Vector2D;
 import Constant.Constant;
 import Game.IconGenerator;
 import Game.Level;
-import Input.MouseInput;
 import scene.*;
 
 import javax.swing.*;
@@ -25,7 +24,7 @@ public class GameWindow extends JFrame {
     private void event() {
         this.keyboardEvent();
         this.windowEvent();
-        this.mouseEvent();
+//        this.mouseEvent();
     }
 
     private void keyboardEvent() {
@@ -42,6 +41,8 @@ public class GameWindow extends JFrame {
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof StartScene) {
                         SceneManager.instance.changeScene(new LevelOneScene());
+//                        Level.level = 2;
+//                        SceneManager.instance.changeScene(new LevelTwoScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelOneScene) {
                         SceneManager.instance.changeScene(new GamePlayScene());
@@ -78,14 +79,14 @@ public class GameWindow extends JFrame {
         });
     }
 
-
-    private void mouseEvent(){
-//        this.addMouseListener(MouseInput.instance);
-        // phải sử dụng getContentPane để lấy tọa độ 0,0 không tính phần bao của cửa sổ window
-        // lệnh getX, getY lấy tọa độ so với điểm 0,0 là phần nội dung bên trong ko tính phần bao
-        this.getContentPane().addMouseListener(MouseInput.instance);
-
-    }
+//
+//    private void mouseEvent(){
+////        this.addMouseListener(MouseInput.instance);
+//        // phải sử dụng getContentPane để lấy tọa độ 0,0 không tính phần bao của cửa sổ window
+//        // lệnh getX, getY lấy tọa độ so với điểm 0,0 là phần nội dung bên trong ko tính phần bao
+//        this.getContentPane().addMouseListener(MouseInput.instance);
+//
+//    }
 
     public void gameLoop() {
         while (true) {

@@ -14,7 +14,10 @@ import java.util.Random;
 public class MediumObjectGenerator extends GameObject {
     private Random random;
     private int need;
-    private Vector2D[] posLevel1 = {new Vector2D(320, 300)};
+    private Vector2D[] posLevel1 = { new Vector2D(320, 300) };
+    private Vector2D[] posLevel2 = { new Vector2D(140, 500), new Vector2D(250, 220),
+                                    new Vector2D(500, 250), new Vector2D(700, 490),
+                                    new Vector2D(800, 350)};
 
     public MediumObjectGenerator() {
         this.random = new Random();
@@ -38,6 +41,24 @@ public class MediumObjectGenerator extends GameObject {
                     1)
             );
         }
+
+        if (Level.level == 2) {
+            this.addAction(new LimitAction(
+                    new ActionAdapter() {
+                        int count = 0;
+
+                        @Override
+                        public boolean run(GameObject owner) {
+                            MediumObject mediumObject = GameObjectManager.instance.recycle(MediumObject.class);
+                            mediumObject.position.set(posLevel2[count++]);
+                            mediumObject.boxCollider.position.set((int) mediumObject.position.x - 20, (int) mediumObject.position.y - 20);
+                            return true;
+                        }
+                    },
+                    posLevel2.length)
+            );
+        }
+
 
     }
 

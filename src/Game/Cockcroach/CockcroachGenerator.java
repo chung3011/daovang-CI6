@@ -8,7 +8,7 @@ import Base.Vector2D;
 import Game.Level;
 
 public class CockcroachGenerator extends GameObject{
-    private Vector2D[] posLevel1 = { new Vector2D(300,450) };
+    private Vector2D[] posLevel1 = { new Vector2D(240,450) };
     private Vector2D[] posLevel2 = { new Vector2D(600, 470), new Vector2D(130, 200)};
 
     private Vector2D[] posLevel3 = { new Vector2D(424, 490), new Vector2D(900, 250),

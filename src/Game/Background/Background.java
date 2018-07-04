@@ -13,7 +13,7 @@ public class Background extends GameObject {
 //    Renderer renderer;
 
     public Background() {
-        this.renderer = new BackgroundRenderer("resources/images/mangnhenxinvl1-pixilart.png", Constant.Window.WIDTH,
+        this.renderer = new BackgroundRenderer("resources/images/mangnhenxinvlkhongvien2-pixilart.png", Constant.Window.WIDTH,
                 Constant.Window.HEIGHT);
     }
 

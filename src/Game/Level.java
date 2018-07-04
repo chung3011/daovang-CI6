@@ -61,7 +61,13 @@ public class Level {
 
     public void isCompleted() {
         if (level == 1) {
-            if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects
+            //            if (sum == 7 && this.isCompleted == false) {
+            if (sum > 7) {
+                this.reset();
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
+            }
+
+            else if (countLargeObjects >= Constant.Level.largeLv1 && countMediumObjects
                     >= Constant.Level.mediumLv1 && countSmallObjects >= Constant.Level.smallLv1) {
 //            if (sum >= 1 ) {
                 this.isCompleted = true;
@@ -70,14 +76,18 @@ public class Level {
                 SceneManager.instance.changeScene(new LevelTwoScene());
             }
 
-            if (sum == 7 && this.isCompleted == false) {
-                this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
-            }
+
         }
 
         else if (level == 2) {
-            if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
+
+            if (sum > 15) {
+//            if (sum == 15 && this.isCompleted == false) {
+                this.reset();
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
+            }
+
+            else if (countLargeObjects >= Constant.Level.largeLv2 && countMediumObjects >= Constant.Level.mediumLv2 &&
                   countSmallObjects >= Constant.Level.smallLv2 ) {
 //            if (countSmallObjects >= 1) {
                 this.isCompleted  = true;
@@ -85,15 +95,18 @@ public class Level {
                 SceneManager.instance.changeScene(new LevelThreeScene());
             }
 
-//            if (sum > 15) {
-            if (sum == 15 && this.isCompleted == false) {
-                this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
-            }
+
         }
 
         else if (level == 3) {
-            if (countLargeObjects >= Constant.Level.largeLv3 && countMediumObjects >= Constant.Level.mediumLv3 &&
+
+            if (sum > 15) {
+//            if (sum == 15 && this.isCompleted == false) {
+                this.reset();
+                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
+            }
+
+            else if (countLargeObjects >= Constant.Level.largeLv3 && countMediumObjects >= Constant.Level.mediumLv3 &&
                   countSmallObjects >= Constant.Level.smallLv3 ) {
 //            if (sum >= 1) {
                 this.isCompleted  = true;
@@ -101,11 +114,7 @@ public class Level {
                 SceneManager.instance.changeScene(new WinningScene());
             }
 
-//            if (sum > 15) {
-            if (sum == 15 && this.isCompleted == false) {
-                this.reset();
-                SceneManager.instance.changeScene(new GameOverAnNhieuScene());
-            }
+
         }
 
     }

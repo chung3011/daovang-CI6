@@ -94,7 +94,7 @@ public class GameWindow extends JFrame {
             }
         });
     }
-    
+
     public void gameLoop() {
         while (true) {
             long currentTime = System.nanoTime();

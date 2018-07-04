@@ -248,8 +248,12 @@ public class Anchor extends GameObject implements PhysicBody {
         else if (gameObject instanceof Cockcroach) {
             this.catchSound.loop(0);
             this.catchSound.start();
-            this.isBomb = true;
-
+            if (this.hasShield) {
+                this.hasShield = false;
+            }
+            else if (!this.hasShield) {
+                this.isBomb = true;
+            }
         }
     }
 

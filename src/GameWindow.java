@@ -42,22 +42,21 @@ public class GameWindow extends JFrame {
                         gameCanvas.startCatching();
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof StartScene) {
+                        SceneManager.instance.changeScene(new StoryScene());
+                    }
+
+                    else if (SceneManager.instance.getCurrentScene() instanceof StoryScene) {
                         SceneManager.instance.changeScene(new IntroScene());
-//                        Level.level = 2;
-//                        SceneManager.instance.changeScene(new LevelTwoScene());
                     }
 
                     else if (SceneManager.instance.getCurrentScene() instanceof IntroScene) {
                         SceneManager.instance.changeScene(new LevelOneScene());
-//                        Level.level = 2;
-//                        SceneManager.instance.changeScene(new LevelTwoScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelOneScene) {
                         SceneManager.instance.changeScene(new GamePlayScene());
                     }
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelTwoScene) {
                         SceneManager.instance.changeScene(new GamePlayScene());
-//                        Level.level = 2;
                     }
 
                     else if (SceneManager.instance.getCurrentScene() instanceof LevelThreeScene) {
@@ -95,16 +94,7 @@ public class GameWindow extends JFrame {
             }
         });
     }
-
-//
-//    private void mouseEvent(){
-////        this.addMouseListener(MouseInput.instance);
-//        // phải sử dụng getContentPane để lấy tọa độ 0,0 không tính phần bao của cửa sổ window
-//        // lệnh getX, getY lấy tọa độ so với điểm 0,0 là phần nội dung bên trong ko tính phần bao
-//        this.getContentPane().addMouseListener(MouseInput.instance);
-//
-//    }
-
+    
     public void gameLoop() {
         while (true) {
             long currentTime = System.nanoTime();

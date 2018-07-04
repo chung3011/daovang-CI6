@@ -1,19 +1,14 @@
 package scene;
 
-
 import Base.GameObjectManager;
-import Base.Vector2D;
-import Constant.Constant;
-import Game.Background.CharactersBackground;
-import Game.Background.StartGameBackground;
+import Game.Background.StoryBackground;
 import Game.Background.WhiteBackground;
-import Game.Button;
 
-public class StartScene implements Scene {
+public class StoryScene implements Scene {
     @Override
     public void init() {
         GameObjectManager.instance.add( new WhiteBackground());
-        GameObjectManager.instance.add(new StartGameBackground());
+        GameObjectManager.instance.add(new StoryBackground());
     }
 
     @Override
